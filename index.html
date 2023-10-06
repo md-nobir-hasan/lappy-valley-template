@@ -1,893 +1,943 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <link rel="stylesheet" href="tailwind-css.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
- 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford:'#380D37',
-                sumon:'#380D37',
-                nobir:'#DC275C',
-                input:'#F2F4F8',
-                skyfford:'#353535',
-                nav:'#F2F2F2',
-                arrow:'#99999980',
 
-              }
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lappy Valley</title>
+  <script src="tailwind-css.css"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#380D37',
+            sumon: '#380D37',
+            nobir: '#DC275C',
+            input: '#F2F4F8',
+            skyfford: '#353535',
+            nav: '#F2F2F2',
+            arrow: '#99999980',
+
           }
         }
-      </script>
+      }
+    }
+  </script>
 
-<style>
+  <style>
     .slider-container {
-        position: relative;
-        overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
 
     .slider {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
     }
 
     .slider img {
-        flex: 0 0 100%;
-        width: 100%;
+      flex: 0 0 100%;
+      width: 100%;
     }
 
     .slider-button {
-        position: absolute;
-        top: 70%;
-        transform: translateY(-40%);
-        /* background-color: rgba(0, 0, 0, 0.5); */
-        color:rgb(228, 224, 224);
-        /* padding: 10px; */
-        cursor: pointer;
-        z-index: 2;
-        font-size:65px;
+      position: absolute;
+      top: 70%;
+      transform: translateY(-40%);
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      color: rgb(228, 224, 224);
+      /* padding: 10px; */
+      cursor: pointer;
+      z-index: 2;
+      font-size: 65px;
     }
 
     .slider-button-left {
-        left: 18px;
+      left: 18px;
     }
+
     .slider-button-left:hover {
-        font-size:70px;
-        color:#99999980;
+      font-size: 70px;
+      color: #99999980;
     }
 
     .slider-button-right:hover {
-        font-size:70px;
-        color:#99999980;
+      font-size: 70px;
+      color: #99999980;
     }
+
     .slider-button-right {
-        right: 18px;
+      right: 18px;
     }
 
-    .fa-fa-1{
-        background:linear-gradient(95.62deg, #380D37 29.15%, #DC275C 139.27%);
-        width: 1265px;
-        height: 78px;
+    .fa-fa-1 {
+      background: linear-gradient(95.62deg, #380D37 29.15%, #DC275C 139.27%);
+      width: 1265px;
+      height: 78px;
 
     }
-    .fa-fa-2{
-        width: 232px;
-        height: 60px;
-        top:12px;
-        left:70px;
+
+    .fa-fa-2 {
+      width: 232px;
+      height: 60px;
+      top: 12px;
+      left: 70px;
     }
-    .fa-fa-3{
-        width:500px;
-        height: 44px;
-        top: 20px;
-        left: 329px;
-        padding: 20px;
-        border-radius: 4px;
-        gap: 10px;
+
+    .fa-fa-3 {
+      width: 500px;
+      height: 44px;
+      top: 20px;
+      left: 329px;
+      padding: 20px;
+      border-radius: 4px;
+      gap: 10px;
     }
-    .fa-fa-4{
-        width:119px;
-        height:44px;
-        top: 20px;
-        left: 984px;
-        padding: 4px, 2px, 4px, 6px;
-        border-radius: 4px;
-        gap:1px;
+
+    .fa-fa-4 {
+      width: 119px;
+      height: 44px;
+      top: 20px;
+      left: 984px;
+      padding: 4px, 2px, 4px, 6px;
+      border-radius: 4px;
+      gap: 1px;
     }
-    .fa{
-        font-style:jost;
+
+    .fa {
+      font-style: jost;
     }
-    .fa-fa-5{
-        font-family: Jost;
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 58px;
-        text-align: left;
-        width: 303px;
-        height: 58px;
-        color: rgba(53, 53, 53, 1);
-        margin-left:-80px;
+
+    .fa-fa-5 {
+      font-family: Jost;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 58px;
+      text-align: left;
+      width: 303px;
+      height: 58px;
+      color: rgba(53, 53, 53, 1);
+      margin-left: -80px;
     }
-    .fa-fa-6{
-        width: 216px;
-        height: 23px;
-        font-family: Jost;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 23px;
-        margin: 0px -27px;
+
+    .fa-fa-6 {
+      width: 216px;
+      height: 23px;
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 23px;
+      margin: 0px -27px;
     }
-    .fa-fa-7{
-        margin-left:550px;
-        margin-top:-28px;
-        margin-bottom:50px;
+
+    .fa-fa-7 {
+      margin-left: 550px;
+      margin-top: -28px;
+      margin-bottom: 50px;
     }
-    .fa-fa-72{
-        margin-left:550px;
-        margin-top:120px;
-        margin-bottom:50px;}
-        
-    .fa-fa-71{
-        margin-left:550px;
-        margin-top:60px;
-        margin-bottom:50px;
+
+    .fa-fa-72 {
+      margin-left: 550px;
+      margin-top: 120px;
+      margin-bottom: 50px;
     }
-    .fa-fa-8{
-        width: 241px;
-        height: 48px;
-        top: 859px;
-        left: 100px;
-        border-radius: 4px, 4px, 0px, 0px;
-        background: rgba(56, 13, 55, 1);
-        color: white;
-        font-weight: 500;
-        font-size: 20px;
-        font-family: Jost;
+
+    .fa-fa-71 {
+      margin-left: 550px;
+      margin-top: 60px;
+      margin-bottom: 50px;
     }
-    .fa-fa-9{
-        width: 241px;
-        height: 48px;
-        top: 859px;
-        left: 100px;
-        border-radius: 4px, 4px, 0px, 0px;
-        background: rgba(242, 242, 242, 1);
-        color: black;
-        font-weight: 500;
-        font-size: 20px;
-        font-family: Jost;
+
+    .fa-fa-8 {
+      width: 241px;
+      height: 48px;
+      top: 859px;
+      left: 100px;
+      border-radius: 4px, 4px, 0px, 0px;
+      background: rgba(56, 13, 55, 1);
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+      font-family: Jost;
     }
-    .fa-fa-10{
-        width: 1180px;
-        top: 907px;
-        left: 100px;
-        border: 2px;
-        background: rgba(56, 13, 55, 1);
-        border: 2px solid rgba(56, 13, 55, 1)
+
+    .fa-fa-9 {
+      width: 241px;
+      height: 48px;
+      top: 859px;
+      left: 100px;
+      border-radius: 4px, 4px, 0px, 0px;
+      background: rgba(242, 242, 242, 1);
+      color: black;
+      font-weight: 500;
+      font-size: 20px;
+      font-family: Jost;
+    }
+
+    .fa-fa-10 {
+      width: 1180px;
+      top: 907px;
+      left: 100px;
+      border: 2px;
+      background: rgba(56, 13, 55, 1);
+      border: 2px solid rgba(56, 13, 55, 1)
+    }
+
+    .fa-fa-11 {
+      width: 221px;
+      height: 376px;
+      gap: 10px;
+      box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .fa-fa {
+      width: 1180px;
+      margin: auto;
+    }
+
+    .fa-fa-12 {
+      font-family: Jost;
+      font-size: 18.1px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: 193px;
+      height: 92px;
+      color: rgba(56, 13, 55, 1);
 
     }
-    .fa-fa-11{
-        width:221px;
-        height:376px;
-        gap: 10px;
-        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
-        }
-    .fa-fa{
-        width:1180px;
-        margin: auto;
-    }
-    .fa-fa-12{
-        font-family: Jost;
-        font-size: 18.1px;
-        font-weight: 500;
-        line-height: 23px;
-        letter-spacing: 0em;
-        text-align: left;
-        width: 193px;
-        height: 92px;
-        color: rgba(56, 13, 55, 1);
+
+    .fa-fa-13 {
+      width: 194px;
+      height: 20px;
+      margin: 12px auto;
 
     }
-    .fa-fa-13{
-        width: 194px;
-        height: 20px;
-        margin:12px auto;
+
+    .fa-fa-14 {
+      font-family: Jost;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #DC275C;
+    }
+
+    .fa-fa-15 {
+      font-family: Jost;
+      font-size: 14px;
+      font-weight: bolder;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: #380D37;
+    }
+
+    .fa-fa-16 {
+      width: 1211px;
+      height: 344px;
+      top: 916px;
+      left: 113px;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px auto;
+
 
     }
-    .fa-fa-14{
-        font-family: Jost;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #DC275C;
-    }
-    .fa-fa-15{
-        font-family: Jost;
-        font-size: 14px;
-        font-weight: bolder;
-        line-height: 16px;
-        letter-spacing: 0em;
-        text-align: right;
-        color: #380D37;
-    }
-    .fa-fa-16{
-        width: 1211px;
-        height: 344px;
-        top: 916px;
-        left: 113px;
-        display: flex;
-        justify-content: space-evenly;
-        margin: 20px auto;
-        
+
+    .fa-fa-17 {
+      width: 1211px;
+      height: 130px;
+      top: 1363px;
+      left: 98px;
+      background: linear-gradient(103.68deg, #380D37 -34.63%, #DC275C 124.27%);
+      margin: auto;
+      align-items: center;
+      color: white;
 
     }
-    .fa-fa-17{
-        width: 1211px;
-        height: 130px;
-        top: 1363px;
-        left: 98px;
-        background: linear-gradient(103.68deg, #380D37 -34.63%, #DC275C 124.27%);
-        margin: auto;
-        align-items: center;
-        color: white;
 
+    .fa-fa-18 {
+      transform: translate(565px, 50px);
+      font-family: jost;
+      font-size: 27px;
     }
-    .fa-fa-18{
-        transform: translate(565px, 50px);
-        font-family: jost;
-        font-size: 27px;
+
+    .fa-fa-20:hover {
+      color: blueviolet;
+      width: 15px;
     }
-    .fa-fa-20:hover{
-        color:blueviolet;
-        width:15px;
-    }
-</style>
+  </style>
 </head>
+
 <body>
-<!-- Header Section -->
- <header class="fa-fa-1 text-white py-4">
+  <!-- Header Section -->
+  <header class="fa-fa-1 text-white py-4">
     <div class="container mx-auto flex justify-evenly items-center">
-        <div class=" fa-fa-2 flex items-center">
-            <!-- <!- Logo --> 
-             <img class="fa-fa-2" src="img/Logo.svg" alt="Your Logo">
-        </div> 
+      <div class=" fa-fa-2 flex items-center">
+        <!-- <!- Logo -->
+        <img class="fa-fa-2" src="img/Logo.svg" alt="Your Logo">
+      </div>
 
-        <!-- Search Bar -->
+      <!-- Search Bar -->
 
-        <div class="relative">
-           
-            <input
-                type="text"
-                class=" fa-fa-3 border border-gray-300 rounded-1 py-2 px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300"
-                placeholder="Search"/>
-                <i style="margin: 14px 20px 10px -488px;position:absolute;color:aqua;" class="fa fa-search" aria-hidden="true"></i>
-        </div>
+      <div class="relative">
 
-        <!-- Right-Side Logos/Icons -->
+        <input type="text"
+          class=" fa-fa-3 border border-gray-300 rounded-1 py-2 px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300"
+          placeholder="Search" />
+        <i style="margin: 14px 20px 10px -488px;position:absolute;color:aqua;" class="fa fa-search"
+          aria-hidden="true"></i>
+      </div>
 
-        <div class="flex">
-            <img src="img/Offers.svg" alt="Logo 1" class=" fa-fa-4">
-            <img src="img/Cart.svg" alt="Logo 2" class="fa-fa-4">
-            <img src="img/Account.svg" alt="Logo 3" class="fa-fa-4">
-        </div>
+      <!-- Right-Side Logos/Icons -->
+
+      <div class="flex">
+        <img src="img/Offers.svg" alt="Logo 1" class=" fa-fa-4">
+        <img src="img/Cart.svg" alt="Logo 2" class="fa-fa-4">
+        <img src="img/Account.svg" alt="Logo 3" class="fa-fa-4">
+      </div>
     </div>
-</header>
-      <!-- <---------------------header-section-end----->
+  </header>
+  <!-- <---------------------header-section-end----->
 
-    <nav class="bg-nav  p-4">
-        <ul class=" fa flex space-x-4 justify-evenly">
-          <li class="relative group jost">
-            <a href="#" class=" jost font-medium text-base text-skyfford ">All Categories <span class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span>
-            </a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">Brand New <span class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">Pre-owned <span class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">Gaming Laptop <span class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">Student Laptop <span class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">Bussines Laptop <span class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">Work Station <span class="  border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">Dubai Variant <span class="  border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="jost font-medium text-base text-skyfford">UK Variant <span class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
-          </li>
-        </ul>
-      </nav>
+  <nav class="bg-nav  p-4">
+    <ul class=" fa flex space-x-4 justify-evenly">
+      <li class="relative group jost">
+        <a href="#" class=" jost font-medium text-base text-skyfford ">All Categories <span
+            class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span>
+        </a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">Brand New <span
+            class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">Pre-owned <span
+            class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">Gaming Laptop <span
+            class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">Student Laptop <span
+            class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">Bussines Laptop <span
+            class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">Work Station <span
+            class="  border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">Dubai Variant <span
+            class="  border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+      <li class="relative group">
+        <a href="#" class="jost font-medium text-base text-skyfford">UK Variant <span
+            class=" border-skyfford inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45"></span></a>
+      </li>
+    </ul>
+  </nav>
 
-      <!-- <------------------nav-end----------> 
+  <!-- <------------------nav-end---------->
 
+<div class="container px-4">
     <div class="slider-container mx-auto max-w-6xl relative">
-        <div class="slider" id="imageSlider">
-            <img src="img/Hero Image.svg" alt="Image 1">
-            <img src="img/Hero Image.svg" alt="Image 2">
-            <img src="img/Hero Image.svg" alt="Image 3">
-        </div>
+    <div class="slider" id="imageSlider">
+      <img src="img/Hero Image.svg" alt="Image 1">
+      <img src="img/Hero Image.svg" alt="Image 2">
+      <img src="img/Hero Image.svg" alt="Image 3">
     </div>
+  </div>
 
-    <div class="slider-button slider-button-left" id="prevSlide">&#8249;</div>
-    <div class="slider-button slider-button-right" id="nextSlide">&#8250;</div>
-    <!-- <--------hero--section --end-->
-    <div class="fa-fa-71 ">
-        <h2 class="fa-fa-5">Featurds Laptops </h2>
-        <p class="fa-fa-6">The best we offer is here</p>
-    </div>
-    <div class="fa-fa">
-        <button class="fa-fa-8">USA</button>
-        <button class="fa-fa-9">ASIAN</button>
-        <div class="fa-fa-10"></div>
-    </div>
-    
-  <!-- <----------start--cart--section----> 
-<div class="fa-fa-16">
-    
+  <div class="slider-button slider-button-left" id="prevSlide">&#8249;</div>
+  <div class="slider-button slider-button-right" id="nextSlide">&#8250;</div>
+  <!-- <--------hero--section --end-->
+  <div class="fa-fa-71 ">
+    <h2 class="fa-fa-5">Featurds Laptops </h2>
+    <p class="fa-fa-6">The best we offer is here</p>
+  </div>
+  <div class="fa-fa">
+    <button class="fa-fa-8">USA</button>
+    <button class="fa-fa-9">ASIAN</button>
+    <div class="fa-fa-10"></div>
+  </div>
+
+  <!-- <----------start--cart--section---->
+  <div class="fa-fa-16">
+
     <div class=" fa-fa-11 flex ">
-        <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-          <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
           " alt="">
-          <div class="">
-              <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class=" fa-fa-13 flex justify-between"  >
-                  <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-                <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-                </div>
-              </div>
-          </div>
-      </div>
-</div>
-
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-      " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
+    </div>
+
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-<!-- <---------cart-section---end--->  
- <div  class="w-{1242px} my-20 mr-50 fa-fa-17">
+  <!-- <---------cart-section---end--->
+  <div class="w-{1242px} my-20 mr-50 fa-fa-17">
     <h1 class="fa-fa-18">New Arrival</h1>
-</div> 
-<!-- <----new arrival--end> -->
+  </div>
+  <!-- <----new arrival--end> -->
 
-<div class=" fa-fa-19 flex " style="width: 1211px;height: 405px;top: 1363px;left: 98px;margin:-40px auto;">
-    <div class="fa-fa-20" style=" display: inline-block;width: 404px;height: 225px;top: 1530px;left: 99px;font-family: Jost;font-size: 52px;font-weight: 500;line-height: 75px;letter-spacing: 0em;color: rgba(220, 39, 92, 1);">Our newest products are here, just for you!
-        <button class="fa-fa-21 " style="display:flex;transform: translate(75px, 50px);font-size:16px;color: rgba(242, 242, 242, 1);width: 116px;height: 44px;border-radius:4px;background: linear-gradient(283.07deg, #DC275C 6.52%, #380D37 100.79%);"><a style="margin: -15px auto;" href="">Visit Now!</a></button>
+  <div class=" fa-fa-19 flex " style="width: 1211px;height: 405px;top: 1363px;left: 98px;margin:-40px auto;">
+    <div class="fa-fa-20"
+      style=" display: inline-block;width: 404px;height: 225px;top: 1530px;left: 99px;font-family: Jost;font-size: 52px;font-weight: 500;line-height: 75px;letter-spacing: 0em;color: rgba(220, 39, 92, 1);">
+      Our newest products are here, just for you!
+      <button class="fa-fa-21 "
+        style="display:flex;transform: translate(75px, 50px);font-size:16px;color: rgba(242, 242, 242, 1);width: 116px;height: 44px;border-radius:4px;background: linear-gradient(283.07deg, #DC275C 6.52%, #380D37 100.79%);"><a
+          style="margin: -15px auto;" href="">Visit Now!</a></button>
     </div>
     <div><img style="width: 820px;height: 352px;top: 1505px;left: 520px;
         " src="img/Hero Image.svg" alt=""></div>
-</div> 
+  </div>
 
 
-<!-- <---------------visit--end--->
+  <!-- <---------------visit--end--->
 
-<div class="fa-fa-16">
-    
+  <div class="fa-fa-16">
+
     <div class=" fa-fa-11 flex ">
-        <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-          <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
           " alt="">
-          <div class="">
-              <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class=" fa-fa-13 flex justify-between"  >
-                  <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-                <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-                </div>
-              </div>
-          </div>
-      </div>
-</div>
-
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-      " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-<div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
+    </div>
+
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div> 
 
-<!-- <--------------cart-view--end--------->
+  <!-- <--------------cart-view--end--------->
 
- <div style="margin: 75px auto;border: 2px solid rgba(56, 13, 55, 1)" class="fa-fa-10"></div>
+  <div style="margin: 75px auto;border: 2px solid rgba(56, 13, 55, 1)" class="fa-fa-10"></div>
 
-<!-- ------------vectot----img-------- -->
-<div style="display: flex;justify-content: space-between;">
+  <!-- ------------vectot----img-------- -->
+  <div style="display: flex;justify-content: space-between;">
     <div class="fa-fa-20" style="width: 13px;height: 36px;top: 2659px;left: 73px;">
-       <img class="" style="border: px;color: rgba(153, 153, 153, 0.5);transform: translate(25px, 267px);" src="img/Vector 2.svg" alt=""></div>
-        <div class="fa-fa-20" style="margin-right:50px;width: 13px;height: 36px;top: 2659px;left: 73px;">
-    <img class="" style="border: px;color: rgba(153, 153, 153, 0.5);transform: translate(25px, 267px);" src="img/Vector 3 (1).svg" alt=""></div>
-</div>
-<!-- ----------vector-- img-end--------------- -->
+      <img class="" style="border: px;color: rgba(153, 153, 153, 0.5);transform: translate(25px, 267px);"
+        src="img/Vector 2.svg" alt="">
+    </div>
+    <div class="fa-fa-20" style="margin-right:50px;width: 13px;height: 36px;top: 2659px;left: 73px;">
+      <img class="" style="border: px;color: rgba(153, 153, 153, 0.5);transform: translate(25px, 267px);"
+        src="img/Vector 3 (1).svg" alt="">
+    </div>
+  </div>
+  <!-- ----------vector-- img-end--------------- -->
 
-<div class="fa-fa-7 ">
+  <div class="fa-fa-7 ">
     <h2 class="fa-fa-5">Featurds Laptops </h2>
     <p style="margin: 0px 0px 0px -29px;">The best we offer is here</p>
-</div>
-<div class="fa-fa">
+  </div>
+  <div class="fa-fa">
     <button class="fa-fa-8">USA</button>
     <button class="fa-fa-9">Asian</button>
     <div class="fa-fa-10"></div>
-</div> 
+  </div>
 
-<div class="fa-fa-16">
+  <div class="fa-fa-16">
 
     <div class=" fa-fa-11 flex ">
-        <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-          <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
           " alt="">
-          <div class="">
-              <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class=" fa-fa-13 flex justify-between"  >
-                  <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-                <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-                </div>
-              </div>
-          </div>
-      </div>
-    </div>
-    
-    <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-      " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
     </div>
-    </div>
-    
+
     <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
     </div>
-    </div>
-    
+
     <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
     </div>
-    </div>
-    
+
     <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
     </div>
+
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div> 
+  </div>
 
 
 
-<!-- ------cart---section ---end--------------- -->
+  <!-- ------cart---section ---end--------------- -->
 
-<div class="fa-fa-72 ">
+  <div class="fa-fa-72 ">
     <h2 class="fa-fa-5">Different Variants </h2>
     <p style="margin: 0px 0px 0px -100px;">We have 2 variants, Dubai and UK. choose from this!</p>
-</div>
-<div class="fa-fa">
+  </div>
+  <div class="fa-fa">
     <button class="fa-fa-8">USA</button>
     <button class="fa-fa-9">Asian</button>
     <div class="fa-fa-10"></div>
-</div> 
-
-<!-- <----------start--cart--section----> 
- <!-- ----------start--cart--section-- -->
-<div class="fa-fa-16">
-
-<div class=" fa-fa-11 flex ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-      " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-            </div>
-          </div>
-      </div>
   </div>
-</div>
 
-<div class=" fa-fa-11 flex   ">
-<div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-  <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-  " alt="">
-  <div class="">
-      <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-      <div class=" fa-fa-13 flex justify-between"  >
-          <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-        <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-        </div>
-      </div>
-  </div>
-</div>
-</div>
-
-<div class=" fa-fa-11 flex   ">
-<div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-  <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-  " alt="">
-  <div class="">
-      <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-      <div class=" fa-fa-13 flex justify-between"  >
-          <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-        <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-        </div>
-      </div>
-  </div>
-</div>
-</div>
-
-<div class=" fa-fa-11 flex   ">
-<div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-  <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-  " alt="">
-  <div class="">
-      <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-      <div class=" fa-fa-13 flex justify-between"  >
-          <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-        <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-        </div>
-      </div>
-  </div>
-</div>
-</div>
-
-<div class=" fa-fa-11 flex   ">
-<div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-  <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
-  " alt="">
-  <div class="">
-      <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-      <div class=" fa-fa-13 flex justify-between"  >
-          <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-        <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-        </div>
-      </div>
-  </div>
-</div>
-</div>
-</div> 
-
-<!-- <----------start--cart--section----> 
-<div style="margin:32px auto;" class="fa-fa-16">
+  <!-- <----------start--cart--section---->
+  <!-- ----------start--cart--section-- -->
+  <div class="fa-fa-16">
 
     <div class=" fa-fa-11 flex ">
-        <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-          <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+  " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+  " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+  " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" fa-fa-11 flex   ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+  " alt="">
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <----------start--cart--section---->
+  <div style="margin:32px auto;" class="fa-fa-16">
+
+    <div class=" fa-fa-11 flex ">
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
           " alt="">
-          <div class="">
-              <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class=" fa-fa-13 flex justify-between"  >
-                  <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
-                <div> <a href="" class=" fa-fa-15">Add to Cart</a>
-                </div>
-              </div>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+            <div> <a href="" class=" fa-fa-15">Add to Cart</a>
+            </div>
           </div>
+        </div>
       </div>
     </div>
 
     <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     </div>
 
     <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     </div>
 
     <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     </div>
 
     <div class=" fa-fa-11 flex   ">
-    <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
-      <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
+      <div class="w-80 max-h-100 mr-2 mt-8 bg-white rounded-lg overflow-hidden">
+        <img class="w-49 h-50 mx-2 object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg
       " alt="">
-      <div class="">
-          <p  class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-          <div class=" fa-fa-13 flex justify-between"  >
-              <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
+        <div class="">
+          <p class=" fa-fa-12 mx-2">Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+          <div class=" fa-fa-13 flex justify-between">
+            <a href="#" class=" fa-fa-14 mx-2">1,50,000TK</a>
             <div> <a href="" class=" fa-fa-15">Add to Cart</a>
             </div>
           </div>
+        </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-    <button class="fa-fa-21 " style="display:flex;margin:95px auto -23px auto;font-size:16px;color: rgba(242, 242, 242, 1);width: 116px;height: 44px;border-radius:4px;background: linear-gradient(283.07deg, #DC275C 6.52%, #380D37 100.79%);"><a style="margin: 7px auto;" href="">See More</a></button>
+  </div>
+
+  <button class="fa-fa-21 "
+    style="display:flex;margin:95px auto -23px auto;font-size:16px;color: rgba(242, 242, 242, 1);width: 116px;height: 44px;border-radius:4px;background: linear-gradient(283.07deg, #DC275C 6.52%, #380D37 100.79%);"><a
+      style="margin: 7px auto;" href="">See More</a></button>
 
 
-<div style="margin: 75px auto;border: 2px solid rgba(56, 13, 55, 1)" class="fa-fa-10"></div>
+  <div style="margin: 75px auto;border: 2px solid rgba(56, 13, 55, 1)" class="fa-fa-10"></div>
 
-<!-- <-------------choose--section---start-----> 
+  <!-- <-------------choose--section---start----->
 
-<div style=" margin:-20px auto;width: 305px;height: 58px;top: 4285px;left: 567px;"><h2 style="font-family: Jost;font-size: 40px;font-weight: 500;line-height: 58px;letter-spacing: 0em;text-align: left;
-   color: rgba(53, 53, 53, 1); ">Why Choose Us?</h2></div>
+  <div style=" margin:-20px auto;width: 305px;height: 58px;top: 4285px;left: 567px;">
+    <h2 style="font-family: Jost;font-size: 40px;font-weight: 500;line-height: 58px;letter-spacing: 0em;text-align: left;
+   color: rgba(53, 53, 53, 1); ">Why Choose Us?</h2>
+  </div>
 
 
-<div style="width: 1211px;
+  <div style="width: 1211px;
             height: 344px;
             top: 916px;
             left: 113px;
             display: flex;
             justify-content: space-evenly;
-            margin: 50px auto;" 
-    class="flex mx-auto">
- <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);" class="bg-white rounded-md p-4 w-72 text-center">
-    <!-- Cart Image -->
-    <img style="width: Hug (206px);height: Hug (271px);gap: 10px;
+            margin: 50px auto;" class="flex mx-auto">
+    <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);"
+      class="bg-white rounded-md p-4 w-72 text-center">
+      <!-- Cart Image -->
+      <img style="width: Hug (206px);height: Hug (271px);gap: 10px;
     " src="img/Group 27.svg" alt="Product" class="w-32 h-32 mx-auto rounded-md mb-4">
-  
-    <!-- Cart Title (middle) -->
-    <h2 style="color: rgba(220, 39, 92, 1);width: 156px;height: 35px;font-family: Jost;font-size: 24px;font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: center;
+
+      <!-- Cart Title (middle) -->
+      <h2 style="color: rgba(220, 39, 92, 1);width: 156px;height: 35px;font-family: Jost;font-size: 24px;font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: center;
     
     " class="text-xl font-semibold mb-2">Wide Varieties</h2>
-  
-    <!-- Cart Description (bottom) -->
-    <p style="width: 206px;height: 100px;font-family: Jost;font-size: 14px;font-weight: 500;line-height: 20px;letter-spacing: 0.02em;text-align: left;color: rgba(56, 13, 55, 1);
 
-    " class="text-gray-600">We have a wide collection of laptops from different brands. We have brand new and pre-owned laptops in our collection.</p>
-  
-    <!-- Price and Checkout Button -->
-    
-  </div>
-  
-<!-- -choose---cart-1--end -->
- 
- <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+      <!-- Cart Description (bottom) -->
+      <p style="width: 206px;height: 100px;font-family: Jost;font-size: 14px;font-weight: 500;line-height: 20px;letter-spacing: 0.02em;text-align: left;color: rgba(56, 13, 55, 1);
+
+    " class="text-gray-600">We have a wide collection of laptops from different brands. We have brand new and pre-owned
+        laptops in our collection.</p>
+
+      <!-- Price and Checkout Button -->
+
+    </div>
+
+    <!-- -choose---cart-1--end -->
+
+    <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
  " class="bg-white rounded-md p-4 w-72 text-center">
-     <!-- Cart Image -->
-     <img style="width: Hug (206px);height: Hug (271px);gap: 10px;
+      <!-- Cart Image -->
+      <img style="width: Hug (206px);height: Hug (271px);gap: 10px;
      " src="img/trust 1.svg" alt="Product" class="w-32 h-32 mx-auto rounded-md mb-4">
-   
-     <!-- Cart Title (middle) -->
-     <h2 style="color: rgba(220, 39, 92, 1);width: 215px;height: 35px;font-family: Jost;font-size: 24px;font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: center;" 
-                class="text-xl font-semibold mb-2">Trusted and Reliable</h2>
-   
-     <!-- Cart Description (bottom) -->
-     <p style="width: 206px; height: 80px;color: rgba(56, 13, 55, 1);font-family: Jost;font-size: 14px;font-weight: 500;line-height: 20px;letter-spacing: 0.02em;text-align: left;
+
+      <!-- Cart Title (middle) -->
+      <h2
+        style="color: rgba(220, 39, 92, 1);width: 215px;height: 35px;font-family: Jost;font-size: 24px;font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: center;"
+        class="text-xl font-semibold mb-2">Trusted and Reliable</h2>
+
+      <!-- Cart Description (bottom) -->
+      <p style="width: 206px; height: 80px;color: rgba(56, 13, 55, 1);font-family: Jost;font-size: 14px;font-weight: 500;line-height: 20px;letter-spacing: 0.02em;text-align: left;
 
  
-     " class="text-gray-600">We are trusted and reliable shop. We provide you with the best services and good quality products.</p>
-   
-     <!-- Price and Checkout Button -->
-     
-   </div>
-   
- <!-- -choose---cart-2--end -->
+     " class="text-gray-600">We are trusted and reliable shop. We provide you with the best services and good quality
+        products.</p>
 
-<div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+      <!-- Price and Checkout Button -->
+
+    </div>
+
+    <!-- -choose---cart-2--end -->
+
+    <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
 " class="bg-white rounded-md p-4 w-72 text-center">
-    <!-- Cart Image -->
-    <img style="width: 116px;height: 116px;
+      <!-- Cart Image -->
+      <img style="width: 116px;height: 116px;
     " src="img/Group 27 (2).svg" alt="Product" class="w-32 h-32 mx-auto rounded-md mb-4">
-  
-    <!-- Cart Title (middle) -->
-    <h2 style="color: rgba(220, 39, 92, 1);width: 130px;height: 35px;font-family: Jost;font-size: 24px;font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: center;
+
+      <!-- Cart Title (middle) -->
+      <h2 style="color: rgba(220, 39, 92, 1);width: 130px;height: 35px;font-family: Jost;font-size: 24px;font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: center;
     
     
     " class="text-xl font-semibold mb-2">Best Service</h2>
-  
-    <!-- Cart Description (bottom) -->
-    <p style="width: 206px;height: 80px;color: rgba(56, 13, 55, 1);font-family: Jost;font-size: 14px;font-weight: 500;line-height: 20px;letter-spacing: 0.02em;text-align: left;
+
+      <!-- Cart Description (bottom) -->
+      <p style="width: 206px;height: 80px;color: rgba(56, 13, 55, 1);font-family: Jost;font-size: 14px;font-weight: 500;line-height: 20px;letter-spacing: 0.02em;text-align: left;
 
 
-    " class="text-gray-600">We provide you with the best after sell services. Any problem, you take it to us and we will solve it.</p>
-  
-    <!-- Price and Checkout Button -->
-    
-  </div>
-  
-<!-- -choose---cart-3---end -->
- 
- <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    " class="text-gray-600">We provide you with the best after sell services. Any problem, you take it to us and we
+        will solve it.</p>
+
+      <!-- Price and Checkout Button -->
+
+    </div>
+
+    <!-- -choose---cart-3---end -->
+
+    <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
  " class="bg-white rounded-md p-4 w-72 text-center">
-     <!-- Cart Image -->
-     <img style="width: 116px;height: 116px;" src="img/best-price 1.svg" alt="Product" class="w-32 h-32 mx-auto rounded-md mb-4">
-   
-     <!-- Cart Title (middle) -->
-     <h2 style="color: rgba(220, 39, 92, 1);width: 211px;
+      <!-- Cart Image -->
+      <img style="width: 116px;height: 116px;" src="img/best-price 1.svg" alt="Product"
+        class="w-32 h-32 mx-auto rounded-md mb-4">
+
+      <!-- Cart Title (middle) -->
+      <h2 style="color: rgba(220, 39, 92, 1);width: 211px;
             height: 35px;font-family: Jost;
             font-size: 24px;
             font-weight: 500;
             line-height: 35px;
             letter-spacing: 0em;
-            text-align: center;" 
-        class="text-xl font-semibold mb-2">Best Price in Market</h2>
-   
-     <!-- Cart Description (bottom) -->
-     <p style="width: 206px;
+            text-align: center;" class="text-xl font-semibold mb-2">Best Price in Market</h2>
+
+      <!-- Cart Description (bottom) -->
+      <p style="width: 206px;
             height: 40px;
             font-family: Jost;
             font-size: 14px;
@@ -895,170 +945,232 @@
             line-height: 20px;
             letter-spacing: 0.02em;
             text-align: left;
-            color: rgba(56, 13, 55, 1);" 
-        class="text-gray-600">We will give you the best and lowest possible price in market.</p>
-   
-     <!-- Price and Checkout Button -->
-   </div>
- <!-- -choose---cart-4--end -->
+            color: rgba(56, 13, 55, 1);" class="text-gray-600">We will give you the best and lowest possible price in
+        market.</p>
 
-  
- <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+      <!-- Price and Checkout Button -->
+    </div>
+    <!-- -choose---cart-4--end -->
+
+
+    <div style="width: 238px;height: 309px;border-radius: 4px;box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
  " class="bg-white rounded-md p-4 w-72 text-center">
-     <!-- Cart Image -->
-     <img style="width: 116px;height: 116px;" 
-     src="img/fast-delivery 1.svg" alt="Product" class="w-32 h-32 mx-auto rounded-md mb-4">
-   
-     <!-- Cart Title (middle) -->
-     <h2 style="color: rgba(220, 39, 92, 1);width: 135px;height: 35px;font-family: Jost;
+      <!-- Cart Image -->
+      <img style="width: 116px;height: 116px;" src="img/fast-delivery 1.svg" alt="Product"
+        class="w-32 h-32 mx-auto rounded-md mb-4">
+
+      <!-- Cart Title (middle) -->
+      <h2 style="color: rgba(220, 39, 92, 1);width: 135px;height: 35px;font-family: Jost;
             font-size: 24px;
             font-weight: 500;
             line-height: 35px;
             letter-spacing: 0em;
-            text-align: center;" 
-     class="text-xl font-semibold mb-2">Fast Delivary</h2>
-   
-     <!-- Cart Description (bottom) -->
-     <p style="color: rgba(56, 13, 55, 1);width: 206px;
+            text-align: center;" class="text-xl font-semibold mb-2">Fast Delivary</h2>
+
+      <!-- Cart Description (bottom) -->
+      <p style="color: rgba(56, 13, 55, 1);width: 206px;
             height: 60px;
             font-family: Jost;
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
             letter-spacing: 0.02em;
-            text-align: left;"
-         class="text-gray-600">We deliver our products carefully as fast as possible at your door step.</p>
-   
-     <!-- Price and Checkout Button -->
-     
-   </div>
-</div>
-<!-- ----------------choose-secton--end-------- -->
+            text-align: left;" class="text-gray-600">We deliver our products carefully as fast as possible at your door
+        step.</p>
 
-<div style="display:flex;margin:auto;width: 162px; height: 58px;top: 4728px;left: 639px;font-family: Jost;font-size: 40px;font-weight: 500;letter-spacing: 0em;text-align: left;color: rgba(53, 53, 53, 1);">
-        <h2>About Us</h2>
+      <!-- Price and Checkout Button -->
+
     </div>
+  </div>
+  <!-- ----------------choose-secton--end-------- -->
 
-<div style="margin-left:22px;width: 1240px;height: 290px;top: 4815px;left: 100px;font-family: Jost;font-size: 16px;font-weight: 500;
+  <div
+    style="display:flex;margin:auto;width: 162px; height: 58px;top: 4728px;left: 639px;font-family: Jost;font-size: 40px;font-weight: 500;letter-spacing: 0em;text-align: left;color: rgba(53, 53, 53, 1);">
+    <h2>About Us</h2>
+  </div>
+
+  <div style="margin-left:22px;width: 1240px;height: 290px;top: 4815px;left: 100px;font-family: Jost;font-size: 16px;font-weight: 500;
 line-height: 23px;letter-spacing: 0em;text-align: justified;color: rgba(53, 53, 53, 1);">
-<p>Brand New and used Laptop import from USA, Dubai & Japan. MacBook, HP, ASUS, Dell, Lenovo, MSI, Acer, Microsoft Surface, Toshiba, Razer Blade & Samsung laptop are available in different models with a very competitive market price.</p></div>
-<!-- ------end------- -->
-
-<div style="margin:-135px auto 20px auto;width: 581px;height: 61px;top: 42px;left: 283px;font-family: Jost;font-size: 42px;font-weight: 500;line-height: 61px;
-letter-spacing: 0em;text-align: left;color: rgba(53, 53, 53, 1);"><h2>What Our Clients Say About Us</h2></div>
-<!-- -------end------ -->
-
-
-
-<!-- -------------start--------- -->
-
-<div  style="display: flex;justify-content: space-evenly;width: 1152px;margin: 50px auto;" class="flex">
-   <div style=" margin-top:60px;width: 280px;height: 306px;top: 215px;left: 37px;border-radius: 12px;background: rgba(255, 255, 255, 1);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);">
-
-
-  <div style="margin-left:10px;">
-     <div style="display:flex;padding-top:40px;">   
-       <img style=" border-radius:100%;width: 60px;height: 60px;top: 29px;left: 17px;background: rgba(196, 196, 196, 1);" src="img/Ellipse 5.svg" alt="">
-
-
-    <div style=" margin-top: 15px;margin-left: 10px;"> 
-        <h1 style="width: 29px;height: 22px;top: 38px;left: 89px;font-family: Lato;font-size: 18px;font-weight: 700;line-height: 22px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">Leo</h1>
-          <p style="width: 75px;height: 14px;top: 66px;left: 89px;font-family: Lato;font-size: 12px;font-weight: 400;line-height: 14px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">Lead Designer</p>
+    <p>Brand New and used Laptop import from USA, Dubai & Japan. MacBook, HP, ASUS, Dell, Lenovo, MSI, Acer, Microsoft
+      Surface, Toshiba, Razer Blade & Samsung laptop are available in different models with a very competitive market
+      price.</p>
   </div>
+  <!-- ------end------- -->
 
-<div style="display: flex;margin-top: 37px;margin-left: 15px;">
-    <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 176px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-    <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 195px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-    <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 214px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-    <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 233px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-    <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 252px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star (1).svg" alt="">
+  <div style="margin:-135px auto 20px auto;width: 581px;height: 61px;top: 42px;left: 283px;font-family: Jost;font-size: 42px;font-weight: 500;line-height: 61px;
+letter-spacing: 0em;text-align: left;color: rgba(53, 53, 53, 1);">
+    <h2>What Our Clients Say About Us</h2>
   </div>
-</div>
-</div>
+  <!-- -------end------ -->
 
 
-<h1 style=" margin: 19px auto;width: 237px;height: 22px;top: 113px;left: 22px;font-family: Lato;;font-size: 18px;font-weight: 700;line-height: 22px;
-letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">It was a very good experience</h1>
-<p style="margin: 17px auto;width: 247px;height: 177px;top: 153px;left: 17px;font-family: Jost;font-size: 13px;font-weight: 400;line-height: 14px;letter-spacing: 0em;
-        text-align: left;color: rgba(53, 53, 53, 1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna 
-   eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu.
-   Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
-</div>
 
-<!-- -----------------end-------------- -->
+  <!-- -------------start--------- -->
 
-<!-- ------------start------------- -->
-
-<div style="width: 398px;height: 423px;top: 139px;left: 377px;padding: 37px, 22px, 27px, 21px;border-radius: 12px;
-            background: rgba(255, 255, 255, 1);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);">
-             <div style="margin-left:15px;">
-                <div style="display:flex;padding-top:40px;">   
-                    <img style=" border-radius:100%;width: 72px;height: 72px;top: 37px;left: 22px;background: rgba(196, 196, 196, 1);" src="img/Ellipse 5.svg" alt="">
-                
-                
-                <div style=" margin-top: 15px;margin-left: 15px;"> 
-                    <h1 style="width: 39px;height: 29px;top: 44px;left: 105px;font-family: Lato;font-size: 24px;font-weight: 700;line-height: 28px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">Leo</h1>
-                  <p style="width: 113px;height: 22px;top: 79px;left: 105px;font-family: Lato;font-size: 18px;font-weight: 400;line-height: 21.6px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">Lead Designer</p>
-                </div>
-                
-                <div style="display: flex;margin-top: 45px;margin-left: 26px;">
-                    <img style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 176px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-                    <img style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 195px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-                    <img style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 233px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-                    <img style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 252px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star (1).svg" alt="">
-                  </div>
-                </div>
-            </div>
-                
-                <h1 style=" margin: 30px auto;width: 315px;height: 29px;top: 134px;left: 41px;font-family: Lato;;font-size: 24px;font-weight: 700;line-height: 28.8px;
-                letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">It was a very good experience</h1>
-                <p style="margin: 17px auto;width: 355px;height: 207px;top: 189px;left: 21px;font-family: Jost;font-size: 18px;font-weight: 400;line-height: 23.13px;letter-spacing: 0em;
-                        text-align: left;color: rgba(53, 53, 53, 1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna 
-                   eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu.
-                   Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
-</div>
-
-<!-- -------------------end------------- -->
+  <div style="display: flex;justify-content: space-evenly;width: 1152px;margin: 50px auto;" class="flex">
+    <div
+      style=" margin-top:60px;width: 280px;height: 306px;top: 215px;left: 37px;border-radius: 12px;background: rgba(255, 255, 255, 1);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);">
 
 
-<!-- -------------start--------- -->
-<div style="margin-top:60px;width: 280px;height: 306px;top: 215px;left: 37px;border-radius: 12px;background: rgba(255, 255, 255, 1);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);">
+      <div style="margin-left:10px;">
+        <div style="display:flex;padding-top:40px;">
+          <img
+            style=" border-radius:100%;width: 60px;height: 60px;top: 29px;left: 17px;background: rgba(196, 196, 196, 1);"
+            src="img/Ellipse 5.svg" alt="">
 
 
-    <div style="margin-left:10px;">
-    <div style="display:flex;padding-top:40px;">   
-        <img style=" border-radius:100%;width: 60px;height: 60px;top: 29px;left: 17px;background: rgba(196, 196, 196, 1);" src="img/Ellipse 5.svg" alt="">
-    
-    
-    <div style=" margin-top: 15px;margin-left: 10px;"> 
-        <h1 style="width: 29px;height: 22px;top: 38px;left: 89px;font-family: Lato;font-size: 18px;font-weight: 700;line-height: 22px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">Leo</h1>
-      <p style="width: 75px;height: 14px;top: 66px;left: 89px;font-family: Lato;font-size: 12px;font-weight: 400;line-height: 14px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">Lead Designer</p>
-    </div>
-    
-    <div style="display: flex;margin-top: 37px;margin-left: 15px;">
-        <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 176px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-        <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 195px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-        <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 214px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-        <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 233px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star.svg" alt="">
-        <img style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 252px;padding: 1.25px, 1.25px, 1.86px, 1.25px;" src="img/star (1).svg" alt="">
+          <div style=" margin-top: 15px;margin-left: 10px;">
+            <h1
+              style="width: 29px;height: 22px;top: 38px;left: 89px;font-family: Lato;font-size: 18px;font-weight: 700;line-height: 22px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">
+              Leo</h1>
+            <p
+              style="width: 75px;height: 14px;top: 66px;left: 89px;font-family: Lato;font-size: 12px;font-weight: 400;line-height: 14px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">
+              Lead Designer</p>
+          </div>
+
+          <div style="display: flex;margin-top: 37px;margin-left: 15px;">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 176px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 195px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 214px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 233px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 252px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star (1).svg" alt="">
+          </div>
+        </div>
       </div>
+
+
+      <h1 style=" margin: 19px auto;width: 237px;height: 22px;top: 113px;left: 22px;font-family: Lato;;font-size: 18px;font-weight: 700;line-height: 22px;
+letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">It was a very good experience</h1>
+      <p style="margin: 17px auto;width: 247px;height: 177px;top: 153px;left: 17px;font-family: Jost;font-size: 13px;font-weight: 400;line-height: 14px;letter-spacing: 0em;
+        text-align: left;color: rgba(53, 53, 53, 1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+        nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna
+        eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque
+        enim arcu.
+        Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus
+        arcu.</p>
     </div>
+
+    <!-- -----------------end-------------- -->
+
+    <!-- ------------start------------- -->
+
+    <div style="width: 398px;height: 423px;top: 139px;left: 377px;padding: 37px, 22px, 27px, 21px;border-radius: 12px;
+            background: rgba(255, 255, 255, 1);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);">
+      <div style="margin-left:15px;">
+        <div style="display:flex;padding-top:40px;">
+          <img
+            style=" border-radius:100%;width: 72px;height: 72px;top: 37px;left: 22px;background: rgba(196, 196, 196, 1);"
+            src="img/Ellipse 5.svg" alt="">
+
+
+          <div style=" margin-top: 15px;margin-left: 15px;">
+            <h1
+              style="width: 39px;height: 29px;top: 44px;left: 105px;font-family: Lato;font-size: 24px;font-weight: 700;line-height: 28px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">
+              Leo</h1>
+            <p
+              style="width: 113px;height: 22px;top: 79px;left: 105px;font-family: Lato;font-size: 18px;font-weight: 400;line-height: 21.6px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">
+              Lead Designer</p>
+          </div>
+
+          <div style="display: flex;margin-top: 45px;margin-left: 26px;">
+            <img
+              style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 176px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 195px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 233px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 5px;width: 22px;height: 22px;top: 79px;left: 252px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star (1).svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <h1 style=" margin: 30px auto;width: 315px;height: 29px;top: 134px;left: 41px;font-family: Lato;;font-size: 24px;font-weight: 700;line-height: 28.8px;
+                letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">It was a very good experience</h1>
+      <p style="margin: 17px auto;width: 355px;height: 207px;top: 189px;left: 21px;font-family: Jost;font-size: 18px;font-weight: 400;line-height: 23.13px;letter-spacing: 0em;
+                        text-align: left;color: rgba(53, 53, 53, 1);">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna
+        eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque
+        enim arcu.
+        Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus
+        arcu.</p>
     </div>
-    
-    
-    <h1 style=" margin: 19px auto;width: 237px;height: 22px;top: 113px;left: 22px;font-family: Lato;;font-size: 18px;font-weight: 700;line-height: 22px;
+
+    <!-- -------------------end------------- -->
+
+
+    <!-- -------------start--------- -->
+    <div
+      style="margin-top:60px;width: 280px;height: 306px;top: 215px;left: 37px;border-radius: 12px;background: rgba(255, 255, 255, 1);box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);">
+
+
+      <div style="margin-left:10px;">
+        <div style="display:flex;padding-top:40px;">
+          <img
+            style=" border-radius:100%;width: 60px;height: 60px;top: 29px;left: 17px;background: rgba(196, 196, 196, 1);"
+            src="img/Ellipse 5.svg" alt="">
+
+
+          <div style=" margin-top: 15px;margin-left: 10px;">
+            <h1
+              style="width: 29px;height: 22px;top: 38px;left: 89px;font-family: Lato;font-size: 18px;font-weight: 700;line-height: 22px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">
+              Leo</h1>
+            <p
+              style="width: 75px;height: 14px;top: 66px;left: 89px;font-family: Lato;font-size: 12px;font-weight: 400;line-height: 14px;letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">
+              Lead Designer</p>
+          </div>
+
+          <div style="display: flex;margin-top: 37px;margin-left: 15px;">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 176px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 195px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 214px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 233px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star.svg" alt="">
+            <img
+              style="margin:0 2px;width: 15px;height: 15px;top: 66px;left: 252px;padding: 1.25px, 1.25px, 1.86px, 1.25px;"
+              src="img/star (1).svg" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <h1 style=" margin: 19px auto;width: 237px;height: 22px;top: 113px;left: 22px;font-family: Lato;;font-size: 18px;font-weight: 700;line-height: 22px;
     letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">It was a very good experience</h1>
-    <p style="margin: 17px auto;width: 247px;height: 177px;top: 153px;left: 17px;font-family: Jost;font-size: 13px;font-weight: 400;line-height: 14px;letter-spacing: 0em;
-            text-align: left;color: rgba(53, 53, 53, 1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna 
-       eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu.
-       Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.</p>
+      <p style="margin: 17px auto;width: 247px;height: 177px;top: 153px;left: 17px;font-family: Jost;font-size: 13px;font-weight: 400;line-height: 14px;letter-spacing: 0em;
+            text-align: left;color: rgba(53, 53, 53, 1);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna
+        eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque
+        enim arcu.
+        Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus
+        arcu.</p>
     </div>
-</div>
+  </div>
 
-<!-- --------------------end-------------------- -->
+  <!-- --------------------end-------------------- -->
 
-<!-- --------------start------------------ -->
-<div style="display: flex;justify-content: space-evenly;width:300px;margin: auto;">
+  <!-- --------------start------------------ -->
+  <div style="display: flex;justify-content: space-evenly;width:300px;margin: auto;">
     <img src="img/Vector (1).svg" alt="">
     <img src="img/Ellipse 5 (1).svg" alt="">
     <img src="img/Ellipse 6.svg" alt="">
@@ -1066,167 +1178,189 @@ letter-spacing: 0em;text-align: center;color: rgba(53, 53, 53, 1);">It was a ver
     <img src="img/Ellipse 6.svg" alt="">
     <img src="img/Ellipse 6.svg" alt="">
     <img src="img/Ellipse 6.svg"">
-    <img src="img/Vector (2).svg" alt="">
-</div>
+    <img src=" img/Vector (2).svg" alt="">
+  </div>
 
-<!-- -------------------vector--img----end--- -->
+  <!-- -------------------vector--img----end--- -->
 
-<div style="margin: 75px auto;border: 2px solid rgba(56, 13, 55, 1)" class="fa-fa-10"></div>
+  <div style="margin: 75px auto;border: 2px solid rgba(56, 13, 55, 1)" class="fa-fa-10"></div>
 
-<!-- --------------------------------- -->
+  <!-- --------------------------------- -->
 
-<div style=" margin:10px auto 30px auto;width: 273px;height: 61px;top: 5722px;left: 579px;font-family: Jost;;font-size: 42px;;font-weight: 500;line-height: 61px;letter-spacing: 0em;
-    text-align: left;color: rgba(53, 53, 53, 1);"><h1>Drop a review!</h1></div>
+  <div style=" margin:10px auto 30px auto;width: 273px;height: 61px;top: 5722px;left: 579px;font-family: Jost;;font-size: 42px;;font-weight: 500;line-height: 61px;letter-spacing: 0em;
+    text-align: left;color: rgba(53, 53, 53, 1);">
+    <h1>Drop a review!</h1>
+  </div>
 
-<!-- --------------------------------------- -->
+  <!-- --------------------------------------- -->
 
-<div style="display:flex;width:1180px;margin:auto;">
+  <div style="display:flex;width:1180px;margin:auto;">
     <div>
-        <h1 style="width: 401px;height: 225px;top: 5845px;left: 100px;font-family: Jost;font-size: 52px;font-weight: 500;line-height: 75px;
+      <h1 style="width: 401px;height: 225px;top: 5845px;left: 100px;font-family: Jost;font-size: 52px;font-weight: 500;line-height: 75px;
         letter-spacing: 0em;text-align: left;color: rgba(220, 39, 92, 1);">We Believe in thepower of Communication</h1>
-        <p style=" margin-top:35px;width: 430px;height: 214px;top: 6106px;left: 100px;font-family: Jost;font-size: 24px;
-        font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: left;color: rgba(53, 53, 53, 1);">Share your experience with us.
-            Drop a comment and we will look into it.</p>
+      <p style=" margin-top:35px;width: 430px;height: 214px;top: 6106px;left: 100px;font-family: Jost;font-size: 24px;
+        font-weight: 500;line-height: 35px;letter-spacing: 0em;text-align: left;color: rgba(53, 53, 53, 1);">Share your
+        experience with us.
+        Drop a comment and we will look into it.</p>
     </div>
     <div>
-       <form class=" rounded-md px-8 pt-6 pb-8 mb-4">
-             <div style="display: flex;justify-content: space-between;">
-                <input style="width: 344px;height: 64px;top: 5845px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);font-family: Jost;font-size: 16px;font-style: italic;
-                font-weight: 500;line-height: 23px;letter-spacing: 0em;text-align: left;padding: 8px 12px;"id="name" type="text" placeholder="Name*">
-            
-                <input style=" padding: 8px 12px;width: 344px;height: 64px;top: 5845px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);font-family: Jost;font-size: 16px;font-style: italic;
-                font-weight: 500;line-height: 23px;letter-spacing: 0em;"id="email" type="email" placeholder="Email*">
-            </div>
-            <div style="display: block;">
-                <input style="width: 721px;height: 64px;top: 5942px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);font-family: Jost;
+      <form class=" rounded-md px-8 pt-6 pb-8 mb-4">
+        <div style="display: flex;justify-content: space-between;">
+          <input style="width: 344px;height: 64px;top: 5845px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);font-family: Jost;font-size: 16px;font-style: italic;
+                font-weight: 500;line-height: 23px;letter-spacing: 0em;text-align: left;padding: 8px 12px;" id="name"
+            type="text" placeholder="Name*">
+
+          <input style=" padding: 8px 12px;width: 344px;height: 64px;top: 5845px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);font-family: Jost;font-size: 16px;font-style: italic;
+                font-weight: 500;line-height: 23px;letter-spacing: 0em;" id="email" type="email" placeholder="Email*">
+        </div>
+        <div style="display: block;">
+          <input style="width: 721px;height: 64px;top: 5942px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);font-family: Jost;
                 font-size: 16px;font-style: italic;font-weight: 500;line-height: 23px;letter-spacing: 0em;text-align: left;margin:24px 0;padding: 8px 12px;
 
-                "class=" py-2 px-3 " id="subject" type="text" placeholder="Subject(optional)">
-              
-                <textarea style="font-family: Jost;font-size: 16px;font-style: italic;font-weight: 500;
-                line-height: 23px;letter-spacing: 0em;text-align: left;padding: 3px 12px;;width: 721px;height: 271px;top: 6049px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);"  id="message" rows="4" placeholder=" Message"></textarea>
-            </div>
-              <div class="flex items-center justify-between">
-                <button style="width: 116px;height: 44px;top: 6353px;left: 616px;border-radius: 4px;font-family: Jost;font-size: 16px;font-weight: 500;
+                " class=" py-2 px-3 " id="subject" type="text" placeholder="Subject(optional)">
+
+          <textarea
+            style="font-family: Jost;font-size: 16px;font-style: italic;font-weight: 500;
+                line-height: 23px;letter-spacing: 0em;text-align: left;padding: 3px 12px;;width: 721px;height: 271px;top: 6049px;left: 616px;border-radius: 4px;background: rgba(242, 242, 242, 1);"
+            id="message" rows="4" placeholder=" Message"></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button
+            style="width: 116px;height: 44px;top: 6353px;left: 616px;border-radius: 4px;font-family: Jost;font-size: 16px;font-weight: 500;
                 line-height: 23px;letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);
-                background: linear-gradient(284.83deg, #DC275C -6.42%, #380D37 111.18%);padding-left: 40px;margin-top: 15px;"  type="submit">
-                  Post
-                </button>
-              </div>
-            </form>
-      </div>
+                background: linear-gradient(284.83deg, #DC275C -6.42%, #380D37 111.18%);padding-left: 40px;margin-top: 15px;"
+            type="submit">
+            Post
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
-<!-- --------------form------end--------------------- -->
+  <!-- --------------form------end--------------------- -->
 
-<footer style="background:linear-gradient(95.62deg, #380D37 29.15%, #DC275C 139.27%);" class="bg-gray-800 text-white py-4">
+  <footer style="background:linear-gradient(95.62deg, #380D37 29.15%, #DC275C 139.27%);"
+    class="bg-gray-800 text-white py-4">
     <div class="container mx-auto flex justify-evenly items-center">
 
-        <div style="margin-top: 25px;margin-left: 175px;">
-            <p style="width: 145px;height: 58px;top: 6520px;left: 98px;font-family: Jost;font-size: 40px;font-weight: 500;
-            line-height: 58px;letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);" class="text-lg font-semibold">Address</p>
-              <ul style="font-family: Jost;font-size: 15px;font-weight: 500;line-height: 23px;letter-spacing: 0em;
-              text-align: left;width: 297px;height: 230px;top: 6603px;left: 98px;color: rgba(242, 242, 242, 1);" class="inline-block ">
-                  <li style="margin-top:15px;"><a href="#" class="hover:text-gray-300">Address: </a></li>
-                  <li><a href="#" class="hover:text-gray-300">Shop # 4A-009A, Block # A, Level #04,</a></li>
-                  <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">Jamuna Future Park, Dhaka -1229</a></li>
-                  <li><a href="#" class="hover:text-gray-300"> Shop # 607(5th Floor),</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Rajuk Commercial-Complex, </a></li>
-                  <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">Azampur, Uttara, Dhaka-1230</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Trade license : 202984t</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
-              </ul>
-          </div>
+      <div style="margin-top: 25px;margin-left: 175px;">
+        <p style="width: 145px;height: 58px;top: 6520px;left: 98px;font-family: Jost;font-size: 40px;font-weight: 500;
+            line-height: 58px;letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);"
+          class="text-lg font-semibold">Address</p>
+        <ul style="font-family: Jost;font-size: 15px;font-weight: 500;line-height: 23px;letter-spacing: 0em;
+              text-align: left;width: 297px;height: 230px;top: 6603px;left: 98px;color: rgba(242, 242, 242, 1);"
+          class="inline-block ">
+          <li style="margin-top:15px;"><a href="#" class="hover:text-gray-300">Address: </a></li>
+          <li><a href="#" class="hover:text-gray-300">Shop # 4A-009A, Block # A, Level #04,</a></li>
+          <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">Jamuna Future Park, Dhaka -1229</a>
+          </li>
+          <li><a href="#" class="hover:text-gray-300"> Shop # 607(5th Floor),</a></li>
+          <li><a href="#" class="hover:text-gray-300">Rajuk Commercial-Complex, </a></li>
+          <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">Azampur, Uttara, Dhaka-1230</a></li>
+          <li><a href="#" class="hover:text-gray-300">Trade license : 202984t</a></li>
+          <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
+        </ul>
+      </div>
 
-        <div style="margin: 0px 50px 0px 162px;">
-          <p  style="width: 167px;height: 58px;top: 6520px;left: 564px;font-family: Jost;font-size: 40px;font-weight: 500;line-height: 23px;
-                letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);" class="text-lg font-semibold">Company</p>
-            <ul style="font-family: Jost;font-size: 14px;font-weight: 500;line-height: 23px;letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);" 
-            class="inline-block ">
-                <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#" class="hover:bg-blue-950"> .Terms& Conditions</a></li>
-                <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#" class="hover:bg-blue-950">Privay Policy</a></li>
-                <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#" class="hover:bg-blue-950">My account</a></li>
-                <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#" class="hover:bg-blue-950">Refund & Service Policy</a></li>
-            </ul>
-        </div>
+      <div style="margin: 0px 50px 0px 162px;">
+        <p style="width: 167px;height: 58px;top: 6520px;left: 564px;font-family: Jost;font-size: 40px;font-weight: 500;line-height: 23px;
+                letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);" class="text-lg font-semibold">
+          Company</p>
+        <ul
+          style="font-family: Jost;font-size: 14px;font-weight: 500;line-height: 23px;letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);"
+          class="inline-block ">
+          <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#"
+              class="hover:bg-blue-950"> .Terms& Conditions</a></li>
+          <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#"
+              class="hover:bg-blue-950">Privay Policy</a></li>
+          <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#"
+              class="hover:bg-blue-950">My account</a></li>
+          <li style="margin: 0px 0px 25px 0;text-decoration: underline;list-style: outside;"><a href="#"
+              class="hover:bg-blue-950">Refund & Service Policy</a></li>
+        </ul>
+      </div>
 
-        <div style="margin-left: 140px;margin-top:30px;">
-            <p style="width: 140.03px;height: 58px;top: 6520px;left: 1022px;font-family: Jost;font-size: 40px;font-weight: 500;line-height: 58px;
-            letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);" class="text-lg font-semibold">Contact</p>
-              <ul style="width: 418px;height: 207px;top: 6605px;left: 1022px;font-family: Jost;font-size: 15px;font-weight: 500;
-              line-height: 23px;letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);" class=" inline-block">
-                  <li style="margin-top:15px"><a href="#" class="hover:text-gray-300"> Phone:</a></li>
-                  <li><a href="#" class="hover:text-gray-300">+8801757773557, +8801712644209,</a></li>
-                  <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">+8801736361123, +8801722288944</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Email:</a></li>
-                  <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">info@lappyvalley.com</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Trade license : 202984</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
-              </ul>
+      <div style="margin-left: 140px;margin-top:30px;">
+        <p style="width: 140.03px;height: 58px;top: 6520px;left: 1022px;font-family: Jost;font-size: 40px;font-weight: 500;line-height: 58px;
+            letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);" class="text-lg font-semibold">Contact
+        </p>
+        <ul style="width: 418px;height: 207px;top: 6605px;left: 1022px;font-family: Jost;font-size: 15px;font-weight: 500;
+              line-height: 23px;letter-spacing: 0em;text-align: left;color: rgba(242, 242, 242, 1);"
+          class=" inline-block">
+          <li style="margin-top:15px"><a href="#" class="hover:text-gray-300"> Phone:</a></li>
+          <li><a href="#" class="hover:text-gray-300">+8801757773557, +8801712644209,</a></li>
+          <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">+8801736361123, +8801722288944</a>
+          </li>
+          <li><a href="#" class="hover:text-gray-300">Email:</a></li>
+          <li style="margin-bottom: 15px;"><a href="#" class="hover:text-gray-300">info@lappyvalley.com</a></li>
+          <li><a href="#" class="hover:text-gray-300">Trade license : 202984</a></li>
+          <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
+        </ul>
 
-<!-- -------social----------icon------------- -->
-              <div style=" margin: 20px 25px 0px -11px;width: 203.74px;height: 26px;top: 6840px;left: 1022px;display: flex;justify-content: space-evenly;
+        <!-- -------social----------icon------------- -->
+        <div style=" margin: 20px 25px 0px -11px;width: 203.74px;height: 26px;top: 6840px;left: 1022px;display: flex;justify-content: space-evenly;
               ">
-                <a href=""> <img style="width: 20.9px;
-                    height: 19.95px;
+          <a href=""> <img class="w-[20.9px] h-[19.95px] " style="
                     top: 2px;
                     left: 2.09px;
                     color:rgba(242, 242, 242, 1)
                     " src="img/Vector.svg" alt=""></a>
-                <a href=""> <img style="width: 25.08px;
+          <a href=""> <img style="width: 25.08px;
                     height: 24px;
                     " src="img/Vector (7).svg" alt=""></a>
-                <a href=""> <img style="width: 20.9px;
+          <a href=""> <img style="width: 20.9px;
                     height: 20px;
                     top: 2px;
                     left: 2.09px;
                     " src="img/Vector (4).svg" alt=""></a>
-                <a href=""></a><img style="width: 23px;
+          <a href=""></a><img style="width: 23px;
                 height: 15.47px;
                 top: 4.26px;
                 left: 1.04px;
                 " src="img/Vector (5).svg" alt=""></a>
-                <a href=""></a><img style="width: 24px;
-                height: 24px;rgba(242, 242, 242, 1)
+          <a href=""></a><img style="width: 24px;
+                height: 24px;color:rgba(242, 242, 242, 1);
                 " src="img/Vector (6).svg" alt=""></a>
-            </div>
-          </div>
+        </div>
+      </div>
     </div>
-</footer> 
+  </footer>
 
-<!-- ---------------footer--section----end---------- -->
-<!-- ------------end----section-------------- -->
- <script>
-        const slider = document.getElementById('imageSlider');
-        const prevSlideButton = document.getElementById('prevSlide');
-        const nextSlideButton = document.getElementById('nextSlide');
-        const slideWidth = slider.offsetWidth;
-        let currentSlide = 0;
+  <!-- ---------------footer--section----end---------- -->
+  <!-- ------------end----section-------------- -->
+  <script>
+    const slider = document.getElementById('imageSlider');
+    const prevSlideButton = document.getElementById('prevSlide');
+    const nextSlideButton = document.getElementById('nextSlide');
+    const slideWidth = slider.offsetWidth;
+    let currentSlide = 0;
 
-        nextSlideButton.addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % slider.children.length;
-            updateSlider();
-        });
+    nextSlideButton.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slider.children.length;
+      updateSlider();
+    });
 
-        prevSlideButton.addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + slider.children.length) % slider.children.length;
-            updateSlider();
-        });
+    prevSlideButton.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slider.children.length) % slider.children.length;
+      updateSlider();
+    });
 
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-        }
-        
+    function updateSlider() {
+      slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    }
 
-        window.addEventListener('resize', () => {
-            slideWidth = slider.offsetWidth;
-            updateSlider();
-        });
 
-        // Initial update to set correct width
-        updateSlider();
-    </script>
+    window.addEventListener('resize', () => {
+      slideWidth = slider.offsetWidth;
+      updateSlider();
+    });
 
-    
+    // Initial update to set correct width
+    updateSlider();
+  </script>
+
+
 </body>
+
 </html>
