@@ -136,10 +136,10 @@
         </div>
 
         <div class="shadow-[2px_2px_5px_2px_#0000001A]">
-          <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
+          <div class="mt-4 bg-white rounded-lg overflow-hidden">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class="">
-              <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left  text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
               <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
                 <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
