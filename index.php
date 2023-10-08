@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lappy Valley</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
   <script src="tailwind-css.css"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -101,83 +102,68 @@
       </div>
 
       <!-- Product  -->
-      <div class="grid grid-cols-5 gap-2">
-        
-        <div class="shadow-[2px_2px_5px_2px_#0000001A]">
-          <div class="mt-4 bg-white rounded-lg">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-col-5 gap-2 mt-6 mb-[78px]">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class="">
               <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class="py-[12px]">
+              <div class="py-[12px] flex justify-between px-2">
                 <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-                <div> <a href="#" class="font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                    to Cart</a>
-                </div>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="shadow-[2px_2px_5px_2px_#0000001A] ">
-          <div class="bg-white rounded-lg overflow-hidden">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class="">
               <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class="py-[12px]">
+              <div class="py-[12px] flex justify-between px-2">
                 <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-                <div> <a href="" class="font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                    to Cart</a>
-                </div>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="shadow-[2px_2px_5px_2px_#0000001A]">
-          <div class="mt-4 bg-white rounded-lg overflow-hidden">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class="">
-              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left  text-[#380D37]">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-                <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-                <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                    to Cart</a>
-                </div>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div class=" pl-[10px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-          <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class="">
-              <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-                <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-                <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                    to Cart</a>
-                </div>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
               </div>
             </div>
           </div>
         </div>
-
-        <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-          <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class="">
-              <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-              <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-                <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-                <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                    to Cart</a>
-                </div>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
               </div>
             </div>
           </div>
@@ -185,411 +171,334 @@
       </div>
     </section>
 
-
-    <!-- <----------start--cart--section---->
-
-
-    <!-- --------cart-section---end--- -->
-
-    <!-- -----------new--arriva---end----------- -->
-
-    <div class=" container py-[3rem] pr-50 w-[100%] h-[130px] items-center text-white bg-gradient-to-r from-[#380D37] to-[#DC275C]">
-      <h1 class="text-[27px] font-[jost] translate-x-[43%]">New Arrival</h1>
-    </div>
-
-    <!-- <----new arrival--end> -->
-
-    <!-- --------------visit--------start---------- -->
-
-    <div class="container w-[100%] h-[360px] flex">
-      <div class=" pt-[22px] inline-block w-[38%] h-[225px] font-[jost] text-[44px] font-[500] leading-[59px] tracking-[0em] text-[#DC275C]">
-        Our newest products are here, just for you!
-        <button class="items-center justify-center mt-[-15px] flex translate-x-[75px] translate-y-[50px] text-[16px] text-[#F2F2F2] w-[116px] h-[44px] rounded-[4px] bg-gradient-to-r from-[#380D37] to-[#DC275C] "><a href="">Visit Now!</a>
-        </button>
+    <!-- New arrival  -->
+    <section>
+      <!-- heading -->
+      <div class="py-[3rem] text-white bg-gradient-to-r from-[#380D37] to-[#DC275C]">
+        <h1 class="text-[27px] font-[jost] text-center">New Arrival</h1>
       </div>
-      <div><img class=" w-[820px] h-[352px]" src="img/Hero Image.svg" alt="">
+
+      <!-- banner  -->
+      <div class="flex gap-2 mt-5 mb-5">
+        <div class="pt-[22px] inline-block font-[jost] text-[44px] font-[500] text-[#DC275C]">
+          <p class="leading-[59px]"> Our newest <br>products are <br>here, just for you!</p>
+          <button class="mt-[-15px] py-2 px-3 text-[16px] text-[#F2F2F2] rounded-[4px] bg-gradient-to-r from-[#380D37] to-[#DC275C] ">
+            Visit Now!
+          </button>
+        </div>
+        <div>
+          <img class=" w-[820px] h-[352px]" src="img/Hero Image.svg" alt="">
+        </div>
       </div>
-    </div>
-    <!-- ----------------------visit---end--- -->
 
+      <!-- Products  -->
+      <!-- Product  -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-col-5 gap-2 mt-6 mb-[78px]">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- -----------cart---section---2----start- -->
+    <!-- Feature Laptop  -->
+    <section>
+      <div class="text-center py-1">
+        <h2 class="font-[jost] text-[40px] font-black text-[#353535]">Featurds Laptops </h2>
+        <p class="font-[jost] text-[16px] font-extrabold text-[#380D37]">The best we offer is here</p>
+      </div>
+      <div class="pt-[60px]">
+        <button class="py-2 px-16 rounded-[1px] bg-[#380D37] text-white font-[500] text-[20px] font-[jost]">USA</button>
+        <button class="py-2 px-16 rounded-[1px] bg-[#F2F2F2] text-black font-[500] text-[20px] font-[jost]">ASIAN</button>
+        <div class="container h-1 bg-[#380D37;]"></div>
+      </div>
 
-    <div class="container top-[916px]  flex justify-evenly py-[2px]">
+      <!-- Product  -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-col-5 gap-2 mt-6 mb-[78px]">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[5px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
+    <!-- Differential products  -->
+    <!-- Feature Laptop  -->
+    <section>
+      <div class="text-center py-1">
+        <h2 class="font-[jost] text-[40px] font-black text-[#353535]">Differential Laptops </h2>
+        <p class="font-[jost] text-[16px] font-extrabold text-[#380D37]">The best we offer is here</p>
+      </div>
+      <div class="pt-[60px]">
+        <button class="py-2 px-16 rounded-[1px] bg-[#380D37] text-white font-[500] text-[20px] font-[jost]">USA</button>
+        <button class="py-2 px-16 rounded-[1px] bg-[#F2F2F2] text-black font-[500] text-[20px] font-[jost]">ASIAN</button>
+        <div class="container h-1 bg-[#380D37;]"></div>
+      </div>
+
+      <!-- Product  -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-col-5 gap-2 mt-6 mb-[78px]">
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
+          <div class="bg-white rounded-lg">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class="">
+              <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
+              <div class="py-[12px] flex justify-between px-2">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px] text-left">Add to Cart</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class=" shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- See more button  -->
+      <button class=" items-center justify-center flex my-[60px] mx-auto text-[16px] text-[#F2F4F8] w-[116px] h-[44px] rounded-[4px] bg-gradient-to-r from-[#380D37] to-[#DC275C]">
+        <a href="">See More</a>
+      </button>
+    </section>
 
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class=" pl-[10px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- -----------cart---section---2---end-- -->
-
-    <!-- --------cart----section---3---start---- -->
-    <div class="w-[400px] h-[50px] pl-[400px] pt-[50px] pb-[50px] items-center">
-      <h2 class=" w-[390px] h-[50px] font-[jost] text-[40px] font-[500] mr-[-23px] ml-[-23px] text-[#353535] ">Featurds
-        Laptops </h2>
-      <p class=" w-[390px] h-[23px] font-[jost] text-[16px] font-[500] mr-[-23px] ml-[-23px] text-[#380D37] pl-[54px] pt-[5px]">
-        The best we offer is here</p>
-    </div>
-    <div class="pt-[60px]">
-      <button class="w-[241px] h-[48px] top-[859px] left-[100px] rounded-[1px] bg-[#380D37] text-white font-[500] text-[20px] font-[jost]">USA</button>
-      <button class="w-[241px] h-[48px] top-[859px] left-[100px] rounded-[1px] bg-[#F2F2F2] text-black font-[500] text-[20px] font-[jost]">ASIAN</button>
-      <div class="container h-1 top-[907px] left-[100px] bg-[#380D37;]"></div>
-    </div>
-
-    <!-- <----------start--cart--section---->
-
-    <div class="container top-[916px]  flex justify-evenly pt-[20px]">
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[5px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[10px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ----------cart-section---3---start---- -->
-
-    <!-- ----------cart-section---4---start---- -->
-    <div class=" h-[50px] pl-[400px] pt-[50px] pb-[50px] items-center">
-      <h2 class=" w-[390px] h-[50px] font-[jost] text-[40px] font-[500] mr-[-23px] ml-[-23px] text-[#353535] ">Different
-        Variants </h2>
-      <p class=" translate-x-[-81px] w-[441px] h-[23px] font-[jost] text-[16px] font-[500] mr-[-23px] ml-[-23px] text-[#380D37] pl-[54px] pt-[5px]">
-        We have 2 variants, Dubai and UK. choose from this!</p>
-    </div>
-    <div class="pt-[60px]">
-      <button class="w-[241px] h-[48px] top-[859px] left-[100px] rounded-[1px] bg-[#380D37] text-white font-[500] text-[20px] font-[jost]">USA</button>
-      <button class="w-[241px] h-[48px] top-[859px] left-[100px] rounded-[1px] bg-[#F2F2F2] text-black font-[500] text-[20px] font-[jost]">ASIAN</button>
-      <div class="container h-1 top-[907px] left-[100px] bg-[#380D37;]"></div>
-    </div>
-
-    <!-- <----------start--cart--section---->
-
-    <div class="container top-[916px]  flex justify-evenly pt-[20px]">
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[5px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[10px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ----------cart-section---4--start---- -->
-
-    <!-- ----------cart-section---5---start---- -->
-
-    <div class="container top-[916px]  flex justify-evenly py-[2px]">
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[5px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100 mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[10px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=" pl-[8px] w-[19%] h-[337px] gap-[10px] shadow-[2px_2px_5px_2px_#0000001A] flex ">
-        <div class="w-80 max-h-100  mt-4 bg-white rounded-lg overflow-hidden">
-          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-          <div class="">
-            <p class=" font-[jost] text-[16px] font-[500] leading-[23px] text-left w-[171px] h-[92px] text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
-            <div class=" w-[175px] h-[20px] py-[12px] flex justify-between">
-              <a href="#" class=" font-[jost] text-[14px] font-[600] leading-[20px] text-left text-[#DC275C]">1,50,000TK</a>
-              <div> <a href="" class=" font-[jost] text-[14px] font-[600] leading-[16px] text-right text-[#380D37]">Add
-                  to Cart</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- --------cart----section---5---end---- -->
-
-    <button class=" items-center justify-center flex my-[60px] mx-auto text-[16px] text-[#F2F4F8] w-[116px] h-[44px] rounded-[4px] bg-gradient-to-r from-[#380D37] to-[#DC275C]">
-      <a href="">See More</a></button>
-
+    <!-- Currention code from this line upto footer  -->
 
     <div class="container h-1 top-[907px] left-[100px] bg-[#380D37]"></div>
 
@@ -886,40 +795,54 @@
 
   <!-- --------------form------end--------------------- -->
 
-  <footer class=" max-w-full  bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white h-[430px]">
-    <div class="container mx-auto flex justify-evenly items-center">
 
-      <div class="mt-[25px] ml-[175px]">
-        <p class="w-[145px] h-[58px] text-[#F2F2F2] font-[jost] text-[40px] text- font-[500] leading-[58px] text-left">
-          Address</p>
-        <ul class="w-[297px] h-[230px] text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left inline-block">
-          <li class="mt-[15px]"><a href="#" class="hover:text-gray-300">Address: </a></li>
-          <li><a href="#" class="hover:text-gray-300">Shop # 4A-009A, Block # A, Level #04,</a></li>
-          <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">Jamuna Future Park, Dhaka -1229</a>
+  <footer class="bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white">
+    <div class="flex justify-evenly">
+
+      <div class="">
+        <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Address</p>
+        <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left">
+          <li>
+            <a href="#" class="hover:text-gray-300">Address: </a>
           </li>
-          <li><a href="#" class="hover:text-gray-300"> Shop # 607(5th Floor),</a></li>
-          <li><a href="#" class="hover:text-gray-300">Rajuk Commercial-Complex, </a></li>
-          <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">Azampur, Uttara, Dhaka-1230</a></li>
-          <li><a href="#" class="hover:text-gray-300">Trade license : 202984t</a></li>
-          <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
+          <li>
+            <a href="#" class="hover:text-gray-300">Shop # 4A-009A, Block # A, Level #04,</a>
+          </li>
+          <li class="mb-[15px]">
+            <a href="#" class="hover:text-gray-300">Jamuna Future Park, Dhaka -1229</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300"> Shop # 607(5th Floor),</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300">Rajuk Commercial-Complex, </a>
+          </li>
+          <li class="mb-[15px]">
+            <a href="#" class="hover:text-gray-300">Azampur, Uttara, Dhaka-1230</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300">Trade license : 202984t</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a>
+          </li>
         </ul>
       </div>
 
-      <div class="mr-[50px] ml-[162px]">
-        <p class="w-[167px] h-[58px]  text-[#F2F2F2] font-[jost] text-[40px] font-[500] leading-[23px] text-left">
-          Company</p>
-        <ul class=" inline-block text-[#F2F2F2] font-[jost] text-[14px] font-[500] leading-[23px] text-left">
-          <li class="mb-[25px] underline list-disc hover:bg-blue-950"><a href="#">Terms& Conditions</a></li>
-          <li class="mb-[25px] underline list-disc hover:bg-blue-950"><a href="#">Privay Policy</a></li>
-          <li class="mb-[25px] underline list-disc hover:bg-blue-950"><a href="#">My account</a></li>
-          <li class="mb-[25px] underline list-disc hover:bg-blue-950"><a href="#">Refund & Service Policy</a></li>
+      <div>
+        <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Company</p>
+        <ul class="text-[#F2F2F2] font-[jost] text-[14px] font-[500] leading-[23px] text-left">
+          <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Terms& Conditions</a></li>
+          <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Privay Policy</a></li>
+          <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">My account</a></li>
+          <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Refund & Service Policy</a></li>
         </ul>
       </div>
 
-      <div class="ml-[140px] mt-[30px]">
-        <p class="w-[140.03px] h-[58px]  text-[#F2F2F2] font-[jost] text-[40px] font-[500] leading-[58px] text-left">
+      <div class="">
+        <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">
           Contact</p>
-        <ul class=" inline-block w-[418px] h-[207px]  text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left">
+        <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left">
           <li class="mt-[15px]"><a href="#" class="hover:text-gray-300"> Phone:</a></li>
           <li><a href="#" class="hover:text-gray-300">+8801757773557, +8801712644209,</a></li>
           <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">+8801736361123, +8801722288944</a>
@@ -931,12 +854,12 @@
         </ul>
 
         <!-- -------social----------icon------------- -->
-        <div class="mt-[20px] mr-[25px] ml-[-11px] w-[203.74px] h-[26px] flex justify-evenly">
-          <a href=""> <img class="w-[25.08px] h-[24px]" src="img/Vector.svg" alt=""></a>
-          <a href=""> <img class="w-[25.08px] h-[24px]" src="img/Vector (7).svg" alt=""></a>
-          <a href=""> <img class="w-[25.08px] h-[24px]" src="img/Vector (4).svg" alt=""></a>
-          <a href=""></a><img class="w-[25.08px] h-[24px]" src="img/Vector (5).svg" alt=""></a>
-          <a href=""></a><img class="w-[25.08px] h-[24px]" src="img/Vector (6).svg" alt=""></a>
+        <div class="mt-[20px] flex justify-evenly">
+          <a href=""> <img class="h-[24px]" src="img/Vector.svg" alt=""></a>
+          <a href=""> <img class="h-[24px]" src="img/Vector (7).svg" alt=""></a>
+          <a href=""> <img class="h-[24px]" src="img/Vector (4).svg" alt=""></a>
+          <a href=""></a><img class="h-[24px]" src="img/Vector (5).svg" alt=""></a>
+          <a href=""></a><img class="h-[24px]" src="img/Vector (6).svg" alt=""></a>
         </div>
         </ul>
       </div>
