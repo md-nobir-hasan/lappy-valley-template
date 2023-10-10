@@ -671,37 +671,40 @@
         <img src="img/Ellipse 6.svg" alt="">
         <img src=" img/Vector (2).svg" alt="">
       </div>
+      <div class="mt-16 h-1 bg-[#380D37]"></div>
     </section>
 
     <!-- Drop/submit a review  -->
-    <section class="mt-16">
-      <div class="mx-auto font-[jost] text-[42px] font-[500px] leading-[61px] text-left text-[#380D37]">
+    <section class="mt-16 mb-5">
+      <div class="text-center font-black font-[jost] text-[42px] font-[500] leading-[61px] text-[#380D37]">
         <h1>Drop a review!</h1>
-      </div>
-
-      <div>
-        <div>
-          <h1 class="font-[jost] text-[52px] font-[500] leading-75px text-left text-[#DC275C]">WeBelieve in thepower of Communication</h1>
-          <p class="mt-[35px] font-[jost] text-[24px] font-[500px] leading-[35px] text-left text-[#353535]">Share yourexperience with us.Drop a comment and we will look into it.</p>
-        </div>
-        <div>
-          <form class="rounded-md px-8 pt-6 pb-8 mb-4">
-            <div class="flex justify-between">
-              <input class="rounded-[4px] bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px] text-left py-[8px] px-[12px]" id="name" type="text" placeholder="Name*">
-              <input class="rounded-[4px] bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px]  py-[8px] px-[12px]" id="email" type="email" placeholder="Email*">
-            </div>
-            <div class="block">
-              <input class=rounded-[4px] bg-[#F2F2F2] font-[jost] text-[16px] mt-[20px] mb-[20px] italic font-[500] leading-[23px] text-left py-[8px] px-[12px]" id="subject" type="text" placeholder="Subject(optional)">
-              <textarea class="rounded-[4px] bg-[#F2F2F2] font-[jost] text-[16px]  italic font-[500] leading-[23px] text-left py-[8px] px-[12px]" id="message" rows="4" placeholder=" Message"></textarea>
-            </div>
-            <div class="flex items-center justify-between">
-              <button class="rounded-[4px] text-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px] text-left pl-[40px] mt-[15px]  bg-gradient-to-r from-[#380D37] to-[#DC275C] " type="submit">Post
+         </div>
+            <div class="grid grid-cols-2 gap-2  mt-6">
+              <div>
+                <h1 class="font-[jost] text-[40px] font-[500] leading-[55px] text-left text-[#DC275C]">We Believe in the </br> power of </br> Communication</h1>
+               <div>   
+                <p class="mt-8 font-[jost] text-[24px] font-[500] leading-[30px] text-left text-[#353535]">Share your experience with us.</br> Drop a comment and we will look into it.</p>
+                </div>
+                </div>
+                    <div>
+                    <form class="">
+                     <div class="grid grid-cols-2 gap-2">
+                      <input class="bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px] text-left py-[8px] px-[12px]" id="name" type="text" placeholder="Name*">
+                        <input class="bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px]  py-[8px] px-[12px]" id="email" type="email" placeholder="Email*">
+                         </div>
+                         <div>
+                          <input class="w-full py-2 px-3 bg-[#F2F2F2] font-[jost] text-[16px] mt-[20px] mb-[20px] italic font-[500] " id="subject" type="text" placeholder="Subject(optional)"></div>
+                        <div>
+                    <textarea class=" w-full py-2 pb-32 px-3 bg-[#F2F2F2] font-[jost] text-[16px]  italic font-[500] " id="message" rows="4" placeholder=" Message"></textarea></div>
+                  <div class="items-center">
+                <button class="text-[#F2F2F2] font-[jost] text-[16px] font-[500] mt-[15px] pt-[5px] pr-[30px] pl-[30px] pb-[5px] bg-gradient-to-r from-[#380D37] to-[#DC275C] " type="submit">Post
               </button>
             </div>
           </form>
         </div>
-      </div>
-    </section>
+    </div>
+  </section>
+ 
 
 
     <!-- --------------form------end--------------------- -->
