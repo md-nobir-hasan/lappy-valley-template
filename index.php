@@ -76,15 +76,33 @@
 
     <!-- Hero Section  -->
     <section>
-      <div class="" id="imageSlider">
-        <img class="container max-w-full" src="img/Hero Image.svg" alt="Image 1">
-      </div>
-      <div class="flex justify-between">
-        <div class="translate-x-[-31px] translate-y-[-261px]"><img class="w-[15px]" src="img/Vector 2 (2).svg" alt="">
+    <div class="relative">
+        <div class="slide relative">
+            <img class=""
+                src="img/Hero Image.svg">
+           
         </div>
-        <div class="translate-x-[31px] translate-y-[-261px]"><img class="w-[15px]" src="img/Vector 3 (1).svg" alt="">
+
+        <div class="slide relative">
+            <img class=""
+                src="img/Hero Image.svg">
+          
         </div>
-      </div>
+
+        <div class="slide relative">
+            <img class=""
+                src="img/Hero Image.svg">
+        </div>
+
+        <!-- The previous button -->
+        <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 -translate-x-[42px] text-[40px] text-blue-500 opacity-50 hover:opacity-100 cursor-pointer"
+            onclick="moveSlide(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+
+        <!-- The next button -->
+        <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 translate-x-[42px] text-[40px] text-blue-500 opacity-50 hover:opacity-100 cursor-pointer"
+            onclick="moveSlide(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></i></a>
+
+    </div>
     </section>
     <!-- --------hero--section --end ----  -->
 
@@ -678,112 +696,157 @@
     <section class="mt-16 mb-5">
       <div class="text-center font-black font-[jost] text-[42px] font-[500] leading-[61px] text-[#380D37]">
         <h1>Drop a review!</h1>
-         </div>
-            <div class="grid grid-cols-2 gap-2  mt-6">
-              <div>
-                <h1 class="font-[jost] text-[40px] font-[500] leading-[55px] text-left text-[#DC275C]">We Believe in the </br> power of </br> Communication</h1>
-               <div>   
-                <p class="mt-8 font-[jost] text-[24px] font-[500] leading-[30px] text-left text-[#353535]">Share your experience with us.</br> Drop a comment and we will look into it.</p>
-                </div>
-                </div>
-                    <div>
-                    <form class="">
-                     <div class="grid grid-cols-2 gap-2">
-                      <input class="bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px] text-left py-[8px] px-[12px]" id="name" type="text" placeholder="Name*">
-                        <input class="bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px]  py-[8px] px-[12px]" id="email" type="email" placeholder="Email*">
-                         </div>
-                         <div>
-                          <input class="w-full py-2 px-3 bg-[#F2F2F2] font-[jost] text-[16px] mt-[20px] mb-[20px] italic font-[500] " id="subject" type="text" placeholder="Subject(optional)"></div>
-                        <div>
-                    <textarea class=" w-full py-2 pb-32 px-3 bg-[#F2F2F2] font-[jost] text-[16px]  italic font-[500] " id="message" rows="4" placeholder=" Message"></textarea></div>
-                  <div class="items-center">
-                <button class="text-[#F2F2F2] font-[jost] text-[16px] font-[500] mt-[15px] pt-[5px] pr-[30px] pl-[30px] pb-[5px] bg-gradient-to-r from-[#380D37] to-[#DC275C] " type="submit">Post
-              </button>
-            </div>
-          </form>
-        </div>
-    </div>
-  </section>
- 
-
-
-    <!-- --------------form------end--------------------- -->
-
-
-    <footer class="bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white">
-      <div class="flex justify-evenly">
-
-        <div class="">
-          <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Address</p>
-          <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left">
-            <li>
-              <a href="#" class="hover:text-gray-300">Address: </a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Shop # 4A-009A, Block # A, Level #04,</a>
-            </li>
-            <li class="mb-[15px]">
-              <a href="#" class="hover:text-gray-300">Jamuna Future Park, Dhaka -1229</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300"> Shop # 607(5th Floor),</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Rajuk Commercial-Complex, </a>
-            </li>
-            <li class="mb-[15px]">
-              <a href="#" class="hover:text-gray-300">Azampur, Uttara, Dhaka-1230</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Trade license : 202984t</a>
-            </li>
-            <li>
-              <a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Company</p>
-          <ul class="text-[#F2F2F2] font-[jost] text-[14px] font-[500] leading-[23px] text-left">
-            <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Terms& Conditions</a></li>
-            <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Privay Policy</a></li>
-            <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">My account</a></li>
-            <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Refund & Service Policy</a></li>
-          </ul>
-        </div>
-
-        <div class="">
-          <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">
-            Contact</p>
-          <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left">
-            <li class="mt-[15px]"><a href="#" class="hover:text-gray-300"> Phone:</a></li>
-            <li><a href="#" class="hover:text-gray-300">+8801757773557, +8801712644209,</a></li>
-            <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">+8801736361123, +8801722288944</a>
-            </li>
-            <li><a href="#" class="hover:text-gray-300">Email:</a></li>
-            <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">info@lappyvalley.com</a></li>
-            <li><a href="#" class="hover:text-gray-300">Trade license : 202984</a></li>
-            <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
-          </ul>
-
-          <!-- -------social----------icon------------- -->
-          <div class="mt-[20px] flex justify-evenly">
-            <a href=""> <img class="h-[24px]" src="img/Vector.svg" alt=""></a>
-            <a href=""> <img class="h-[24px]" src="img/Vector (7).svg" alt=""></a>
-            <a href=""> <img class="h-[24px]" src="img/Vector (4).svg" alt=""></a>
-            <a href=""></a><img class="h-[24px]" src="img/Vector (5).svg" alt=""></a>
-            <a href=""></a><img class="h-[24px]" src="img/Vector (6).svg" alt=""></a>
           </div>
-          </ul>
-        </div>
+            <div class="grid grid-cols-2 mt-20">
+              <div>
+                <div>
+                  <h1 class="font-[jost] text-[40px] font-[500] leading-[55px] text-[#DC275C]">We Believe in the </br> power of </br> Communication</h1>
+                   </div>
+                     <div>   
+                      <p class="mt-8 font-[jost] text-[24px] font-[500] leading-[30px] text-[#353535]">Share your experience with us.</br> Drop a comment and we will look into it.</p>
+                        </div>
+                          </div>
+                           <form>
+                            <div class="grid grid-cols-2 gap-2">
+                           <input class="bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px] text-left py-[8px] px-[12px]" id="name" type="text" placeholder="Name*">
+                          <input class="bg-[#F2F2F2] font-[jost] text-[16px] italic font-[500] leading-[23px]  py-[8px] px-[12px]" id="email" type="email" placeholder="Email*">
+                         </div>
+                        <div>
+                      <input class="w-full py-2 px-3 bg-[#F2F2F2] font-[jost] text-[16px] mt-[20px] mb-[20px] italic font-[500] " id="subject" type="text" placeholder="Subject(optional)">
+                    </div>
+                  <div>
+                <textarea class=" w-full py-2 pb-32 px-3 bg-[#F2F2F2] font-[jost] text-[16px]  italic font-[500] " id="message" rows="4" placeholder=" Message"></textarea>
+              </div>
+            <div class="items-center">
+          <button class="text-[#F2F2F2] font-[jost] text-[16px] font-[500] mt-[15px] pt-[5px] pr-[30px] pl-[30px] pb-[5px] bg-gradient-to-r from-[#380D37] to-[#DC275C] " type="submit">Post
+        </button>
       </div>
-    </footer>
+    </form>
+ </div>
+ </section>
+ 
+ <!-- --------------form------end--------------------- -->
+ 
+ <footer class="bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white mt-20 h-[400px]">
+ <div class="flex justify-evenly">
+ 
+  <div class="">
+    <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Address</p>
+    <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left">
+      <li>
+        <a href="#" class="hover:text-gray-300">Address: </a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-300">Shop # 4A-009A, Block # A, Level #04,</a>
+      </li>
+      <li class="mb-[15px]">
+        <a href="#" class="hover:text-gray-300">Jamuna Future Park, Dhaka -1229</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-300"> Shop # 607(5th Floor),</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-300">Rajuk Commercial-Complex, </a>
+      </li>
+      <li class="mb-[15px]">
+        <a href="#" class="hover:text-gray-300">Azampur, Uttara, Dhaka-1230</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-300">Trade license : 202984t</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a>
+      </li>
+    </ul>
+  </div>
+ 
+  <div>
+    <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Company</p>
+    <ul class="text-[#F2F2F2] font-[jost] text-[14px] font-[500] leading-[23px] text-left">
+      <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Terms& Conditions</a></li>
+      <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Privay Policy</a></li>
+      <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">My account</a></li>
+      <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Refund & Service Policy</a></li>
+    </ul>
+  </div>
+ 
+  <div class="">
+    <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">
+      Contact</p>
+    <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[23px] text-left">
+      <li class="mt-[15px]"><a href="#" class="hover:text-gray-300"> Phone:</a></li>
+      <li><a href="#" class="hover:text-gray-300">+8801757773557, +8801712644209,</a></li>
+      <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">+8801736361123, +8801722288944</a>
+      </li>
+      <li><a href="#" class="hover:text-gray-300">Email:</a></li>
+      <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">info@lappyvalley.com</a></li>
+      <li><a href="#" class="hover:text-gray-300">Trade license : 202984</a></li>
+      <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
+    </ul>
+ 
+    <!-- -------social----------icon------------- -->
+    <div class="mt-[20px] flex justify-evenly">
+      <a href=""> <img class="h-[24px]" src="img/Vector.svg" alt=""></a>
+      <a href=""> <img class="h-[24px]" src="img/Vector (7).svg" alt=""></a>
+      <a href=""> <img class="h-[24px]" src="img/Vector (4).svg" alt=""></a>
+      <a href=""></a><img class="h-[24px]" src="img/Vector (5).svg" alt=""></a>
+      <a href=""></a><img class="h-[24px]" src="img/Vector (6).svg" alt=""></a>
+    </div>
+    </ul>
+  </div>
+ </div>
+ </footer>
+ 
+ <!-- ---------------footer--section----end---------- -->
+   
 
-    <!-- ---------------footer--section----end---------- -->
+      <!-- Javascript code -->
+      <script>
+        // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
 
+        // change slide with the prev/next button
+        function moveSlide(moveStep) {
+            showSlide(slideIndex += moveStep);
+        }
 
+        // change slide with the dots
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
 
-</body>
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName('dot');
+            
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            // hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.add('hidden');
+            }
+
+            // remove active status from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('bg-yellow-500');
+                dots[i].classList.add('bg-green-600');
+            }
+
+            // show the active slide
+            slides[slideIndex - 1].classList.remove('hidden');
+
+            // highlight the active dot
+            dots[slideIndex - 1].classList.remove('bg-green-600');
+            dots[slideIndex - 1].classList.add('bg-yellow-500');
+        }
+    </script>
+
+ </body>
+
 
 </html>
+                    
+                          
