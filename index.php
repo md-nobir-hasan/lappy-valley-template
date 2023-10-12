@@ -8,21 +8,22 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
   <script src="tailwind-css.css"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="tailwind.css">
 </head>
 
 <body>
   <!-- Header Section -->
-  <header class="md:mx-auto h-[78px]  bg-gradient-to-r from-[#380D37] to-[#DC275C] text-white">
-    <div class="mx-auto flex justify-center items-center">
+  <header class="md:mx-auto h-[78px] bg-gradient-to-r from-[#380D37] to-[#DC275C] text-white">
+    <div class="mx-auto flex justify-center items-center h-full">
       <!-- <!- Logo -->
-      <div>
-        <img class="md:min-w-[82%] w-[100%] lg:w-[95%] md:w-[90%] h-[60px] " src="img/Logo.svg" alt="Your Logo">
+      <div class='pr-2'>
+        <img class="h-[60px]" src="img/Logo.svg" alt="Your Logo">
       </div>
       <!-- Search Bar -->
 
       <div class="relative">
         <i class="fa fa-search absolute text-[aqua] top-[14px] left-4" aria-hidden="true"></i>
-        <input type="text" class="xl:min-w-[820px] lg:min-w-[600px] border border-gray-300 rounded-[4px] py-2 px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300" placeholder="Search" />
+        <input type="text" class="lg:w-[480px] border border-gray-300 rounded-[4px] py-2 px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300" placeholder="Search" />
       </div>
 
       <!-- Right-Side Logos/Icons -->
@@ -79,19 +80,19 @@
     <div class="relative">
         <div class="slide relative">
             <img class=""
-                src="img/Hero Image.svg">
+                src="img/Hero-Image.svg">
            
         </div>
 
         <div class="slide relative">
             <img class=""
-                src="img/Hero Image.svg">
+                src="img/Hero-Image.svg">
           
         </div>
 
         <div class="slide relative">
             <img class=""
-                src="img/Hero Image.svg">
+                src="img/Hero-Image.svg">
         </div>
 
         <!-- The previous button -->
@@ -116,15 +117,16 @@
       <div class="pt-[60px]">
         <button class="py-2 px-16 rounded-[1px] bg-[#380D37] text-white font-[500] text-[20px] font-[jost]">USA</button>
         <button class="py-2 px-16 rounded-[1px] bg-[#F2F2F2] text-black font-[500] text-[20px] font-[jost]">ASIAN</button>
-        <div class="container h-1 bg-[#380D37;]"></div>
+        <div class="h-1 bg-[#380D37;]"></div>
       </div>
 
       <!-- Product  -->
+
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-col-5 gap-2 mt-6 mb-[78px]">
         <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
           <div class="bg-white rounded-lg">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class="">
+            <div>
               <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
               <div class="py-[12px] flex justify-between px-2">
@@ -137,7 +139,7 @@
         <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
           <div class="bg-white rounded-lg">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class="">
+            <div>
               <p class="font-[jost] text-[16px] font-[500] leading-[23px] text-left text-[#380D37]">
                 Lenovo IdeaPad 15AMN7 AMD Ryzen 57520U 8-512 GB,Brand New Cloud grey</p>
               <div class="py-[12px] flex justify-between px-2">
@@ -200,12 +202,14 @@
       <div class="flex gap-2 mt-5 mb-5">
         <div class="pt-[22px] inline-block font-[jost] text-[44px] font-[500] text-[#DC275C]">
           <p class="leading-[59px]"> Our newest <br>products are <br>here, just for you!</p>
+          <div class='text-center'>
           <button class="mt-[-15px] py-2 px-3 text-[16px] text-[#F2F2F2] rounded-[4px] bg-gradient-to-r from-[#380D37] to-[#DC275C] ">
             Visit Now!
           </button>
+          </div>
         </div>
         <div>
-          <img class=" w-[820px] h-[352px]" src="img/Hero Image.svg" alt="">
+          <img class=" w-[820px] h-[352px]" src="img/Hero-Image.svg" alt="">
         </div>
       </div>
 
@@ -291,8 +295,8 @@
         <button class="py-2 px-16 rounded-[1px] bg-[#F2F2F2] text-black font-[500] text-[20px] font-[jost]">ASIAN</button>
         <div class="container h-1 bg-[#380D37;]"></div>
       </div>
-
       <!-- Product  -->
+
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-col-5 gap-2 mt-6 mb-[78px]">
         <div class="shadow-[2px_2px_5px_2px_#0000001A] p-2">
           <div class="bg-white rounded-lg">
@@ -360,6 +364,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- Differential products  -->
@@ -522,27 +527,27 @@
       </div>
       <div class="grid grid-cols-5 gap-2 my-[50px] ">
         <div class=" rounded-[4px] shadow-[2px_2px_5px_2px_#0000001A] p-3">
-          <img class="mx-auto" src="img/Group 27.svg" alt="Product">
+          <img class="mx-auto" src="img/Group-laptop.svg" alt="Product">
           <h2 class=" mt-[25px] mb-[10px] text-[#DC275C] font-[jost] text-[20px] font-black leading-[35px] text-center ">Wide Varieties</h2>
           <p class="font-[jost] text-[14px] font-[500] leading-[20px] text-left text-[#380D37]">We have a wide collection of laptops from different brands. We have brand new and pre-ownedlaptops in our collection.</p>
         </div>
         <div class=" rounded-[4px] shadow-[2px_2px_5px_2px_#0000001A] p-3">
-          <img class="mx-auto" src="img/trust 1.svg" alt="Product">
+          <img class="mx-auto" src="img/trust-1.svg" alt="Product">
           <h2 class=" mt-[25px] mb-[10px] text-[#DC275C] font-[jost] text-[19px] font-black leading-[35px] text-center ">Trusted and Reliable</h2>
           <p class="font-[jost] text-[14px] font-[500] leading-[20px] text-left text-[#380D37]">We are trusted and reliable shop. We provide you with the best services and good quality products.</p>
         </div>
         <div class=" rounded-[4px] shadow-[2px_2px_5px_2px_#0000001A] p-3">
-          <img class="mx-auto" src="img/Group 27 (2).svg" alt="Product">
+          <img class="mx-auto" src="img/Best-service.svg" alt="Product">
           <h2 class=" mt-[25px] mb-[10px] text-[#DC275C] font-[jost] text-[20px] font-black leading-[35px] text-center ">Best Service</h2>
           <p class="font-[jost] text-[14px] font-[500] leading-[20px] text-left text-[#380D37]">We provide you with the best after sell services. Any problem, you take it to us and we will solve it.</p>
         </div>
         <div class=" rounded-[4px] shadow-[2px_2px_5px_2px_#0000001A] p-3">
-          <img class="mx-auto" src="img/best-price 1.svg" alt="Product">
+          <img class="mx-auto" src="img/best-price-1.svg" alt="Product">
           <h2 class=" mt-[25px] mb-[10px] text-[#DC275C] font-[jost] text-[19px] font-black leading-[35px] text-center ">Best Price in Market</h2>
           <p class="font-[jost] text-[14px] font-[500] leading-[20px] text-left text-[#380D37]">We will give you the best and lowest possible price in market.</p>
         </div>
         <div class=" rounded-[4px] shadow-[2px_2px_5px_2px_#0000001A] p-3">
-          <img class="mx-auto" src="img/fast-delivery 1.svg" alt="Product">
+          <img class="mx-auto" src="img/fast-delivery-1.svg" alt="Product">
           <h2 class=" mt-[25px] mb-[10px] text-[#DC275C] font-[jost] text-[20px] font-black leading-[35px] text-center ">Fast Delivary</h2>
           <p class="font-[jost] text-[14px] font-[500] leading-[20px] text-left text-[#380D37]">We deliver our products carefully as fast as possible at your door step.</p>
         </div>
@@ -724,7 +729,7 @@
     </form>
  </div>
  </section>
- 
+ </div>
  <!-- --------------form------end--------------------- -->
  
  <footer class="bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white mt-20 h-[400px]">
@@ -785,12 +790,12 @@
     </ul>
  
     <!-- -------social----------icon------------- -->
-    <div class="mt-[20px] flex justify-evenly">
-      <a href=""> <img class="h-[24px]" src="img/Vector.svg" alt=""></a>
-      <a href=""> <img class="h-[24px]" src="img/Vector (7).svg" alt=""></a>
-      <a href=""> <img class="h-[24px]" src="img/Vector (4).svg" alt=""></a>
-      <a href=""></a><img class="h-[24px]" src="img/Vector (5).svg" alt=""></a>
-      <a href=""></a><img class="h-[24px]" src="img/Vector (6).svg" alt=""></a>
+    <div class="mt-[20px] grid grid-cols-5 gap-2 text-[24px]">
+      <a href=""> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
     </div>
     </ul>
   </div>
@@ -798,7 +803,6 @@
  </footer>
  
  <!-- ---------------footer--section----end---------- -->
-   
 
       <!-- Javascript code -->
       <script>
@@ -815,7 +819,6 @@
         function currentSlide(n) {
             showSlide(slideIndex = n);
         }
-
         function showSlide(n) {
             let i;
             const slides = document.getElementsByClassName("slide");
@@ -843,10 +846,7 @@
             dots[slideIndex - 1].classList.add('bg-yellow-500');
         }
     </script>
-
  </body>
-
-
 </html>
                     
                           
