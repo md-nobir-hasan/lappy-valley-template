@@ -81,9 +81,10 @@
 
 
  <!-- Sidenav -->
-<div class=" container mx-auto mt-4">
+<section class=" container mx-auto mt-4">
+  <div class='grid grid-cols-2'>
   <div>
-  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px]'>
+  <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px]'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Availability</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -104,7 +105,7 @@
     </div>
   </div>
   <!-- -----------------------2------------------ -->
-  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+  <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Brands</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -141,7 +142,7 @@
     </div>
   </div>
   <!-- --------------------3-------------------- -->
-  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+  <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Processor Models</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -210,7 +211,7 @@
     </div>
   </div>
   <!-- ---------------------4---------------------- -->
-  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+  <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Processor Generations</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -275,7 +276,7 @@
     </div>
   </div>
   <!-- ---------------------------------5-------------------- -->
-  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+  <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Display Size</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -310,7 +311,7 @@
     <!-- --------------------6----------------- -->
  
 <!-- ---------------------7----------------------- -->
-<div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+<div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">RAM</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -339,7 +340,7 @@
     </div>
     </div>
 <!-- ----------------------8---------------------- -->
-<div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+<div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">HDD</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -353,7 +354,7 @@
     </div>
     <!-- -------------------9---------------- -->
 
-    <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">SSD</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -378,7 +379,7 @@
     </div>
     </div>
 
-    <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Graphics</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -407,7 +408,7 @@
     </div>
     </div>
 
-    <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
       <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Special Features</span>
       <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
@@ -439,14 +440,10 @@
       </label>
     </div>
     </div>
-  </div>
-
-
-
-
-
-
-        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+    </div>
+    <!-- ---------------------------------------------------- -->
+    <div class='grid grid-cols-4 gap-3 h-[650px]'>
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
             <div class="">
@@ -471,7 +468,7 @@
   
 
 
-        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
             <div class="">
@@ -495,7 +492,7 @@
             </div>
      
 
-        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
             <div class="">
@@ -519,7 +516,7 @@
             </div>
         
 
-        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
             <div class="">
@@ -541,11 +538,111 @@
                 <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
               </div>
             </div>
+            </div>
+
+      
       </div>
-   
+
+      <div class='grid grid-cols-4 gap-3'>
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+          </div>
+  
 
 
-    </div>
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+            </div>
+     
+
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+            </div>
+        
+
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+            </div>
+            </div>
+  </section>
+
+
  <!-- --------------form------end--------------------- -->
  
  <footer class="bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white mt-20 h-[400px]">
