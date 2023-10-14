@@ -13,60 +13,63 @@
 
 <body>
   <!-- Header Section -->
-  <header class="md:mx-auto h-[78px] bg-gradient-to-r from-[#380D37] to-[#DC275C] text-white">
-    <div class="mx-auto flex justify-center items-center h-full">
+  <header class=" h-[100px] bg-gradient-to-r from-[#380D37] to-[#DC275C] text-white">
+    <div class=" flex justify-between items-center h-full px-10">
       <!-- <!- Logo -->
       <div class='pr-2'>
-        <img class="h-[60px]" src="img/Logo.svg" alt="Your Logo">
+        <a href="#"><img class="h-[80px]" src="img/Logo.svg" alt="Your Logo"></a>
       </div>
       <!-- Search Bar -->
 
       <div class="relative">
-        <i class="fa fa-search absolute text-[aqua] top-[14px] left-4" aria-hidden="true"></i>
-        <input type="text" class="lg:w-[480px] border border-gray-300 rounded-[4px] py-2 px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300" placeholder="Search" />
+        <i class="fa fa-search absolute text-[aqua] top-[22px] left-4" aria-hidden="true"></i>
+        <input type="text" 
+        class="w-[750px] border text-left border-gray-300 rounded-[4px] py-4 px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300"
+         placeholder="Search" />
       </div>
 
       <!-- Right-Side Logos/Icons -->
-
+     <div class='flex justify-center items-center '>
       <!-- <div class="flex item-center "> -->
-      <img src="img/Offers.svg" alt="Logo 1" class="">
-      <img src="img/Cart.svg" alt="Logo 2" class="">
-      <img src="img/Account.svg" alt="Logo 3" class="">
+      <img class='h-[60px]' src="img/Offers.svg" alt="Logo 1" class="">
+     <a href="#"><img class='h-[60px]' src="img/Cart.svg" alt="Logo 2" class=""></a>
+    <a href="#"> <img class='h-[60px]' src="img/Account.svg" alt="Logo 3" class=""></a>
       <!-- </div> -->
+    </div>
     </div>
   </header>
   <!-----------------------header-section-end----->
 
-  <nav class="bg-[#F2F2F2]  p-4">
-    <ul class="font-[Jost] flex space-x-4 justify-evenly">
+  <nav class="bg-[#F2F2F2]  py-4 px-10">
+    <ul class="font-[Jost] flex justify-between">
       <li class=" jost">
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">All Categories
+        <a href="product-list.php" class="font-[jost] text-[20px] text-[#353535] flex items-center">All Categories
           <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span>
         </a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">Brand New <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">Brand New <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">Pre-owned <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">Pre-owned <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">Gaming Laptop <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">Gaming Laptop <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">Student Laptop <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">Student Laptop <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">Bussines Laptop <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">Bussines Laptop <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">Work Station <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">Work Station <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">Dubai Variant <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">Dubai Variant <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
       <li>
-        <a href="#" class="jost font-medium text-base text-[#353535] flex items-center">UK Variant <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+        <a href="#" class="font-[jost] text-[20px] text-[#353535] flex items-center">UK Variant <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
       </li>
     </ul>
   </nav>
@@ -76,22 +79,22 @@
   <div class="container mx-auto lg:px-16">
 
     <!-- Hero Section  -->
-    <section>
+    <section class=''>
     <div class="relative">
         <div class="slide relative">
-            <img class=""
+            <img class="container"
                 src="img/Hero-Image.svg">
            
         </div>
 
         <div class="slide relative">
-            <img class=""
+            <img class="container"
                 src="img/Hero-Image.svg">
           
         </div>
 
         <div class="slide relative">
-            <img class=""
+            <img class="container"
                 src="img/Hero-Image.svg">
         </div>
 
