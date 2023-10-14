@@ -1422,6 +1422,30 @@ input[type="range"]:active::-webkit-slider-thumb {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[0px\] {
+  height: 0px;
+}
+
+.h-\[90px\] {
+  height: 90px;
+}
+
+.h-\[95px\] {
+  height: 95px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[70px\] {
+  height: 70px;
+}
+
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
@@ -1612,6 +1636,18 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[630px\] {
+  width: 630px;
+}
+
+.w-\[600px\] {
+  width: 600px;
 }
 
 .min-w-0 {
@@ -2044,6 +2080,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   gap: 0.75rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2187,6 +2227,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-radius: 0.75rem;
 }
 
+.rounded-\[\] {
+  border-radius: ;
+}
+
 .rounded-b-lg {
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -2242,6 +2286,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .border-\[1px\] {
   border-width: 1px;
+}
+
+.border-\[1\.5px\] {
+  border-width: 1.5px;
 }
 
 .border-b {
@@ -2382,6 +2430,14 @@ input[type="range"]:active::-webkit-slider-thumb {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
+.border-\[1\.dpx\] {
+  border-color: 1.dpx;
 }
 
 .border-t-transparent {
@@ -2562,6 +2618,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-gradient-to-r {
@@ -2832,6 +2892,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-bottom: 8px;
 }
 
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2976,6 +3041,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   font-family: jost;
 }
 
+.font-\[\] {
+  font-family: ;
+}
+
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
 }
@@ -3074,6 +3143,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
 }
 
 .font-\[400\] {
@@ -3476,6 +3549,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .underline {

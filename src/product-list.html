@@ -11,27 +11,27 @@
 
 <body>
  <!-- Header Section -->
- <header class=" h-[100px] bg-gradient-to-r from-[#380D37] to-[#DC275C] text-white">
+ <header class=" h-[80px] bg-gradient-to-r from-[#380D37] to-[#DC275C] text-white">
     <div class="flex items-center justify-between h-full px-10 ">
       <!-- <!- Logo -->
       <div class='pr-2'>
-        <a href="#"><img class="h-[80px]" src="/dist/img/Logo.svg" alt="Your Logo"></a>
+        <a href="#"><img class="h-[60px]" src="/dist/img/Logo.svg" alt="Your Logo"></a>
       </div>
       <!-- Search Bar -->
 
       <div class="relative">
         <i class="fa fa-search absolute text-[aqua] top-[22px] left-4" aria-hidden="true"></i>
         <input type="text" 
-        class="w-[750px] border text-left border-gray-300 rounded-[4px] py-4 px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300"
-         placeholder="Search" />
+        class="w-[500px] border text-left border-gray-300 rounded-[4px] py-[14px] px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300"
+         placeholder="Search"/>
       </div>
 
       <!-- Right-Side Logos/Icons -->
      <div class='flex items-center justify-center '>
       <!-- <div class="flex item-center "> -->
-      <img class='h-[60px]' src="/dist/img/Offers.svg" alt="Logo 1" class="">
-     <a href="#"><img class='h-[60px]' src="/dist/img/Cart.svg" alt="Logo 2" class=""></a>
-    <a href="#"> <img class='h-[60px]' src="/dist/img/Account.svg" alt="Logo 3" class=""></a>
+      <a href="#"><img class='h-[50px]' src="/dist/img/Offers.svg" alt="Logo 1"></a>
+     <a href="#"><img class='h-[50px]' src="/dist/img/Cart.svg" alt="Logo 2"></a>
+    <a href="#"> <img class='h-[50px]' src="/dist/img/Account.svg" alt="Logo 3" ></a>
       <!-- </div> -->
     </div>
     </div>
@@ -79,12 +79,8 @@
 
 
  <!-- Sidenav -->
-<<<<<<< HEAD:product-list.php
-<section class=" container mx-auto mt-4">
-  <div class='grid grid-cols-2'>
-=======
-<div class="container mx-auto mt-4 ">
->>>>>>> main:src/product-list.html
+<div class=" container mx-auto mt-4">
+  <div class="flex justify-between gap-2">
   <div>
   <div class='bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px]'>
     <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
@@ -440,112 +436,387 @@
         <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
         <span class='font-[jost] text-[20px] text-[#380D37]'>Type-C Port</span>
       </label>
+ </div>
+</div>
+</div>
+<!-- ----------------brand new section----------------------- -->
+<div>
+
+  <nav class=" px-3 flex justify-between items-center bg-[#F2F2F2] py-3 font-[jost] font-[600] text-[18px] rounded-[4px]">
+    <div class="">
+      <h1>Brand New</h1>
     </div>
+  <div class="flex justify-between font-[jost] font-[500] text-[17px]">
+    <div class="">
+      <label for="text">Show:</label>
+      <select name="input-sort" class="py-1  border-[1.5px]">
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="30">30</option>
+        <option value="30">30</option>
+      </select>
     </div>
+    <div class="">
+      <label for="text">Short By:</label>
+      <select name="input-sort" class="py-1 px-3 border-[1.5px]">>
+        <option value="20">Default</option>
+        <option value="30">30</option>
+        <option value="30">30</option>
+        <option value="30">30</option>
+      </select>
     </div>
-    <!-- ---------------------------------------------------- -->
-    <div class='grid grid-cols-4 gap-3 h-[650px]'>
-        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
-            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
-            <div class="">
-              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
-              </div>
-              <div class='mt-1'>
-              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
-                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
-                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
-                <li>Display: 15.6" FHD (1920X1080)</li>
-                <li>Features: Type-C</li>
-              </ul>
-              </div>
-              </div>
-              <div class="my-3 text-center ">
-                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
-                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
-                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
-              </div>
+  </div>
+  </nav>
+
+
+
+    <div class='grid grid-cols-4 gap-3 mt-4'>
+      <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+          <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+          <div class="">
+            <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+            Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+            </div>
+            <div class='mt-1'>
+            <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+              <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+              <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+              <li>Display: 15.6" FHD (1920X1080)</li>
+              <li>Features: Type-C</li>
+            </ul>
+            </div>
+            </div>
+            <div class="my-3 text-center ">
+              <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+              <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+              <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+            </div>
+        </div>
+
+
+
+      <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+          <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+          <div class="">
+            <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+            Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+            </div>
+            <div class='mt-1'>
+            <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+              <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+              <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+              <li>Display: 15.6" FHD (1920X1080)</li>
+              <li>Features: Type-C</li>
+            </ul>
+            </div>
+            </div>
+            <div class="my-3 text-center ">
+              <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+              <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+              <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+            </div>
           </div>
-  
+   
 
-
-        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
-            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
-            <div class="">
-              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
-              </div>
-              <div class='mt-1'>
-              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
-                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
-                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
-                <li>Display: 15.6" FHD (1920X1080)</li>
-                <li>Features: Type-C</li>
-              </ul>
-              </div>
-              </div>
-              <div class="my-3 text-center ">
-                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
-                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
-                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
-              </div>
+      <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+          <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+          <div class="">
+            <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+            Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
             </div>
-     
-
-        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
-            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
-            <div class="">
-              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
-              </div>
-              <div class='mt-1'>
-              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
-                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
-                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
-                <li>Display: 15.6" FHD (1920X1080)</li>
-                <li>Features: Type-C</li>
-              </ul>
-              </div>
-              </div>
-              <div class="my-3 text-center ">
-                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
-                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
-                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
-              </div>
-            </div>
-        
-
-        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
-            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
-            <div class="">
-              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
-              </div>
-              <div class='mt-1'>
-              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
-                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
-                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
-                <li>Display: 15.6" FHD (1920X1080)</li>
-                <li>Features: Type-C</li>
-              </ul>
-              </div>
-              </div>
-              <div class="my-3 text-center ">
-                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
-                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
-                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
-              </div>
+            <div class='mt-1'>
+            <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+              <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+              <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+              <li>Display: 15.6" FHD (1920X1080)</li>
+              <li>Features: Type-C</li>
+            </ul>
             </div>
             </div>
-
+            <div class="my-3 text-center ">
+              <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+              <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+              <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+            </div>
+          </div>
       
+
+      <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+          <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+          <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+          <div class="">
+            <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+            Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+            </div>
+            <div class='mt-1'>
+            <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+              <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+              <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+              <li>Display: 15.6" FHD (1920X1080)</li>
+              <li>Features: Type-C</li>
+            </ul>
+            </div>
+            </div>
+            <div class="my-3 text-center ">
+              <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+              <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+              <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class='grid grid-cols-4 gap-3 mt-4'>
+          <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+              <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+              <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+              <div class="">
+                <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                </div>
+                <div class='mt-1'>
+                <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                  <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                  <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                  <li>Display: 15.6" FHD (1920X1080)</li>
+                  <li>Features: Type-C</li>
+                </ul>
+                </div>
+                </div>
+                <div class="my-3 text-center ">
+                  <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                  <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                  <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                </div>
+            </div>
+    
+    
+    
+          <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+              <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+              <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+              <div class="">
+                <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                </div>
+                <div class='mt-1'>
+                <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                  <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                  <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                  <li>Display: 15.6" FHD (1920X1080)</li>
+                  <li>Features: Type-C</li>
+                </ul>
+                </div>
+                </div>
+                <div class="my-3 text-center ">
+                  <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                  <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                  <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                </div>
+              </div>
+       
+    
+          <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+              <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+              <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+              <div class="">
+                <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                </div>
+                <div class='mt-1'>
+                <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                  <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                  <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                  <li>Display: 15.6" FHD (1920X1080)</li>
+                  <li>Features: Type-C</li>
+                </ul>
+                </div>
+                </div>
+                <div class="my-3 text-center ">
+                  <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                  <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                  <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                </div>
+              </div>
+          
+    
+          <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+              <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+              <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+              <div class="">
+                <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                </div>
+                <div class='mt-1'>
+                <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                  <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                  <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                  <li>Display: 15.6" FHD (1920X1080)</li>
+                  <li>Features: Type-C</li>
+                </ul>
+                </div>
+                </div>
+                <div class="my-3 text-center ">
+                  <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                  <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                  <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- ---------------------3th brand section------------------- -->
+
+            <div class='grid grid-cols-4 gap-3 mt-4'>
+              <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+                  <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+                  <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+                  <div class="">
+                    <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                    Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                    </div>
+                    <div class='mt-1'>
+                    <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                      <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                      <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                      <li>Display: 15.6" FHD (1920X1080)</li>
+                      <li>Features: Type-C</li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="my-3 text-center ">
+                      <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                      <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                      <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                    </div>
+                </div>
+        
+        
+        
+              <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+                  <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+                  <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+                  <div class="">
+                    <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                    Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                    </div>
+                    <div class='mt-1'>
+                    <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                      <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                      <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                      <li>Display: 15.6" FHD (1920X1080)</li>
+                      <li>Features: Type-C</li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="my-3 text-center ">
+                      <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                      <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                      <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                    </div>
+                  </div>
+           
+        
+              <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+                  <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+                  <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+                  <div class="">
+                    <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                    Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                    </div>
+                    <div class='mt-1'>
+                    <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                      <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                      <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                      <li>Display: 15.6" FHD (1920X1080)</li>
+                      <li>Features: Type-C</li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="my-3 text-center ">
+                      <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                      <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                      <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                    </div>
+                  </div>
+              
+        
+              <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+                  <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+                  <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+                  <div class="">
+                    <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                    Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                    </div>
+                    <div class='mt-1'>
+                    <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                      <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                      <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                      <li>Display: 15.6" FHD (1920X1080)</li>
+                      <li>Features: Type-C</li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="my-3 text-center ">
+                      <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                      <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                      <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                    </div>
+                  </div>
+                </div>
+
+  <!-- ----------------------------4th brand section  ------------------- -->
+  <div class='grid grid-cols-4 gap-3 mt-4'>
+    <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+        <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+        <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+        <div class="">
+          <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+          Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+          </div>
+          <div class='mt-1'>
+          <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+            <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+            <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+            <li>Display: 15.6" FHD (1920X1080)</li>
+            <li>Features: Type-C</li>
+          </ul>
+          </div>
+          </div>
+          <div class="my-3 text-center ">
+            <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+            <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+            <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+          </div>
       </div>
 
-      <div class='grid grid-cols-4 gap-3'>
+
+
+    <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+        <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+        <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+        <div class="">
+          <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+          Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+          </div>
+          <div class='mt-1'>
+          <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+            <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+            <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+            <li>Display: 15.6" FHD (1920X1080)</li>
+            <li>Features: Type-C</li>
+          </ul>
+          </div>
+          </div>
+          <div class="my-3 text-center ">
+            <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+            <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+            <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+          </div>
+        </div>
         <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
             <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
             <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
@@ -562,87 +833,143 @@
               </ul>
               </div>
               </div>
-              <div class=" text-center my-3">
+              <div class="my-3 text-center ">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+            </div>
+            <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+                <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+                <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+                <div class="">
+                  <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                  Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                  </div>
+                  <div class='mt-1'>
+                  <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                    <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                    <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                    <li>Display: 15.6" FHD (1920X1080)</li>
+                    <li>Features: Type-C</li>
+                  </ul>
+                  </div>
+                  </div>
+                  <div class="my-3 text-center ">
+                    <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                    <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                    <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                  </div>
+                </div>
+              </div>
+        
+ 
+    
+
+
+      <!-- ----------------------------------------5th brand section-------------------------- -->
+
+      <div class='grid grid-cols-4 gap-3 mt-4'>
+        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class="my-3 text-center ">
                 <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
                 <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
                 <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
               </div>
           </div>
+          <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+              <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+              <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+              <div class="">
+                <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                </div>
+                <div class='mt-1'>
+                <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                  <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                  <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                  <li>Display: 15.6" FHD (1920X1080)</li>
+                  <li>Features: Type-C</li>
+                </ul>
+                </div>
+                </div>
+                <div class="my-3 text-center ">
+                  <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                  <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                  <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                </div>
+              </div>
+              <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+                  <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+                  <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+                  <div class="">
+                    <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                    Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                    </div>
+                    <div class='mt-1'>
+                    <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                      <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                      <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                      <li>Display: 15.6" FHD (1920X1080)</li>
+                      <li>Features: Type-C</li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="my-3 text-center ">
+                      <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                      <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                      <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                    </div>
+                  </div>
+                  <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
+                      <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+                      <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+                      <div class="">
+                        <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+                        Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+                        </div>
+                        <div class='mt-1'>
+                        <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                          <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                          <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                          <li>Display: 15.6" FHD (1920X1080)</li>
+                          <li>Features: Type-C</li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="my-3 text-center ">
+                          <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                          <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                          <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>      
+              </div>
+  
+  
+  
+     
+  
+        
   
 
-
-        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
-            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
-            <div class="">
-              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
-              </div>
-              <div class='mt-1'>
-              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
-                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
-                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
-                <li>Display: 15.6" FHD (1920X1080)</li>
-                <li>Features: Type-C</li>
-              </ul>
-              </div>
-              </div>
-              <div class=" text-center my-3">
-                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
-                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
-                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
-              </div>
-            </div>
-     
-
-        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
-            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
-            <div class="">
-              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
-              </div>
-              <div class='mt-1'>
-              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
-                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
-                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
-                <li>Display: 15.6" FHD (1920X1080)</li>
-                <li>Features: Type-C</li>
-              </ul>
-              </div>
-              </div>
-              <div class=" text-center my-3">
-                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
-                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
-                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
-              </div>
-            </div>
-        
-
-        <div class="border-[1px] border-[black] rounded-[4px] py-2 px-4">
-            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
-            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
-            <div class="">
-              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
-              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
-              </div>
-              <div class='mt-1'>
-              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
-                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
-                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
-                <li>Display: 15.6" FHD (1920X1080)</li>
-                <li>Features: Type-C</li>
-              </ul>
-              </div>
-              </div>
-              <div class=" text-center my-3">
-                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
-                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
-                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
-              </div>
-            </div>
-            </div>
-  </section>
 
 
  <!-- --------------form------end--------------------- -->
