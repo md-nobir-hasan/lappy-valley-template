@@ -81,10 +81,471 @@
 
 
  <!-- Sidenav -->
+<div class=" container mx-auto mt-4">
+  <div>
+  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px]'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Availability</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>In Stock</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Pre Order</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Up Coming</span>
+      </label>
+    </div>
+  </div>
+  <!-- -----------------------2------------------ -->
+  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Brands</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Asus</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>MSI</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>HP</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>DELL</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Lenovo</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Acer</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Apple</span>
+      </label>
+    </div>
+  </div>
+  <!-- --------------------3-------------------- -->
+  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Processor Models</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel core i3</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel core i5</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel core i7</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel core i9</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Athlon</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 3</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 5</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 7</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 9</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Apple M1</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Apple M1 Pro</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Apple M1 Pro Max</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Apple M2</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Apple M2 Pro</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Apple M2 Pro Max</span>
+      </label>
+    </div>
+  </div>
+  <!-- ---------------------4---------------------- -->
+  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Processor Generations</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 5th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 6th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 7th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 8th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 9th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 10th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 11th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 12th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Intel 13th gen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 3000 series</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 4000 series</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 5000 series</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 6000 series</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>AMD Ryzen 7000 series</span>
+      </label>
+    </div>
+  </div>
+  <!-- ---------------------------------5-------------------- -->
+  <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Display Size</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Bellow 13 inch</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>13 inch to 13.9 inch</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>14 inch to 14.9 inch</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>15 inch to 15.9 inch</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>16 inch to 16.9 inch</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>17 inch to 17.9 inch</span>
+      </label>
+    </div>
+    </div>
+    <!-- --------------------6----------------- -->
+ 
+<!-- ---------------------7----------------------- -->
+<div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">RAM</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>4 GB</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>8 GB</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>16 GB</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>32 GB</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>64 GB</span>
+      </label>
+    </div>
+    </div>
+<!-- ----------------------8---------------------- -->
+<div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">HDD</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>1 TB</span>
+      </label>
+    </div>
+    </div>
+    <!-- -------------------9---------------- -->
+
+    <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">SSD</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>128 GB</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>256 GB</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>512 GB</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>1 TB</span>
+      </label>
+    </div>
+    </div>
+
+    <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Graphics</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Integrated/Shared</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Dedicated 2GB</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Dedicated 4GB</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Dedicated 6GB</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Dedicated 8GB</span>
+      </label>
+    </div>
+    </div>
+
+    <div class=' faq bg-[#F2F2F2] shadow-[0_2px_4px_rgba(0,0,0,.1)] rounded-[10px] mt-3'>
+    <div class='border-b-[2px] border-[#380D3733] flex justify-between px-[20px] py-[14px]'>
+      <span class='text-[#380D37] font-[jost] font-[600] text-[20px] leading-[20.23px] ' for="text">Special Features</span>
+      <a href="#"><i class="fa fa-angle-up active:rotate-180 text-[#000000] text-[20px] cursor-pointer" aria-hidden="true"></i></a>
+    </div>
+    <div class='px-[20px] py-[14px]'>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Backlit Keyboard</span>
+      </label>
+      <label class='block' for="#">
+        <input class='border-[1px] border-[#764A87]' class='' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Finger Print</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>360 Degree</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Touch Screen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Touch Screen</span>
+      </label>
+      <label class='block' for="#">
+        <input  class='border-[1px] border-[#764A87]' type="checkbox" name='status' valu='7'>
+        <span class='font-[jost] text-[20px] text-[#380D37]'>Type-C Port</span>
+      </label>
+    </div>
+    </div>
+  </div>
 
 
 
 
+
+
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+          </div>
+  
+
+
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+            </div>
+     
+
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+            </div>
+        
+
+        <div class="shadow-[2px_2px_5px_2px_#0000001A] py-2 px-4">
+            <img class="object-center" src="https://img.ep-cdn.com/i/500/500/al/altgyfzwibuorcempdvx/lenovo-ideapad-1-15amn7-cloud-grey-full-hd-ryzen-3-7320u-8gb-512gb-ssd-82vg0070ya-laptop-cene.jpg" alt="">
+            <div class='border-t-[1px] border-b-[1px] border-[#380D3733] py-2'>
+            <div class="">
+              <p class="font-[jost] text-[18px] font-[500] leading-[23px] text-left text-[#380D37]">
+              Lenovo IdeaPad 15AMN7 AMD Ryzen 5 7520U 8-512 GB</p>
+              </div>
+              <div class='mt-1'>
+              <ul class='text-[#353535] list-decimal px-4 text-[13px] leading-[25px]'>
+                <li>Processor: AMD Ryzen 5 7520U (2.8 GHz up to 4.3 GHz)</li>
+                <li>RAM: 8GB DDR5 5500MHz, Storage: 256GB SSD</li>
+                <li>Display: 15.6" FHD (1920X1080)</li>
+                <li>Features: Type-C</li>
+              </ul>
+              </div>
+              </div>
+              <div class=" text-center my-3">
+                <a href="#" class="font-[jost] text-[14px] font-[600] leading-[20px] text-[#DC275C] block">1,50,000 TAKA</a>
+                <button class='bg-[#380D37] text-white py-1 px-14 rounded-[5px] my-[10px]'>Buy Now</button>
+                <p class="font-[jost] text-[14px] font-[600] leading-[20px]">Add to Cart</p>
+              </div>
+            </div>
+      </div>
+   
+
+
+    </div>
  <!-- --------------form------end--------------------- -->
  
  <footer class="bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white mt-20 h-[400px]">
@@ -160,7 +621,15 @@
  <!-- // Initialization for ES Users -->
 <!-- Sidebar -->
 
+<script>
+const faqs = document.querySelectorAll('.faq');
+faqs.forEach(faq =>){
+  faq.addEventListener('click',() => {
+    faq.classList.toggle('active')
+  })
+}
 
+</script>
 
 
 
