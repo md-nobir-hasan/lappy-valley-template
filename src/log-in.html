@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lappy Valley</title>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="/dist/alpine.js"></script>
+  <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body>
+ <!-- Header Section -->
+ <header class="xl:h-[100px] bg-gradient-to-r from-[#380D37] to-[#DC275C] text-white">
+    <div class="flex items-center justify-between h-full px-10 ">
+      <!-- <!- Logo -->
+      <div class='pr-2'>
+        <a href="#"><img class="xl:h-[80px]" src="/dist/img/Logo.svg" alt="Your Logo"></a>
+      </div>
+      <!-- Search Bar -->
+
+      <div class="relative">
+        <i class="fa fa-search absolute text-[aqua] mt-4 left-4" aria-hidden="true"></i>
+        <input type="text" 
+        class="xl:w-[700px] border text-left border-gray-300 rounded-[6px] py-[12px] px-10 placeholder-white-0 focus:outline-none focus:ring focus:border-blue-300"
+         placeholder="Search"/>
+      </div>
+
+      <!-- Right-Side Logos/Icons -->
+     <div class='flex items-center justify-center '>
+      <!-- <div class="flex item-center "> -->
+      <a href="#"><img class='xl:h-[65px]' src="/dist/img/Offers.svg" alt="Logo 1"></a>
+     <a href="#"><img class='xl:h-[65px]' src="/dist/img/Cart.svg" alt="Logo 2"></a>
+    <a href="#"> <img class='xl:h-[65px]' src="/dist/img/Account.svg" alt="Logo 3" ></a>
+      <!-- </div> -->
+    </div>
+    </div>
+  </header>
+  <!-----------------------header-section-end----->
+
+  <nav class="bg-[#F2F2F2]  py-4 px-10">
+    <ul class="font-[Jost] flex justify-between">
+      <li class=" jost">
+        <a href="product-list.php" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">All Categories
+          <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">Brand New <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">Pre-owned <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">Gaming Laptop <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">Student Laptop <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">Bussines Laptop <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">Work Station <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">Dubai Variant <span class=" border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+      <li>
+        <a href="#" class="font-[jost] xl:text-[20px] text-[#353535] flex items-center">UK Variant <span class="border-[#353535] inline-block w-2 h-2 border-b-2 border-r-2 transform rotate-45 ml-1"></span></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- ------------------container--section-------start--- -->
+<div class="container mx-auto">
+  <div class=>
+    <h1 class='font-[jost] xl:text-[20px] font-[400] leading-[25.3px] text-[#353535]'>Home / Account</h1>
+    <div class='h-1 bg-[#764A8733]'></div>
+  </div>
+<!-- --------------log-in--section----------- -->
+
+
+<div class=" w-[700px] mx-auto mt-[40px] p-[20px]">
+    <div x-data="{ open: false }" class=" flex gap-[10px]">
+        <button @click="open = ! open" x-show="open" x-on:style:{bg-[#000]}  class="bg-[#F2F2F2] text-[16px] text-[#380D37] font-[jost] font-[600] px-[66px] py-[12px] text-left rounded-[5px]"><a href="#">Log In</a></button>
+        <button class="bg-[#F2F2F2] text-[16px] text-[#380D37] font-[jost] font-[600] px-[55px] py-[12px] text-right rounded-[5px]"><a href="#">Registration</a></button>
+    </div>
+
+
+
+
+<div class="block max-w-sm rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+  <form>
+    <!--E-mail input-->
+    <div class="relative mb-6" data-te-input-wrapper-init>
+      <input
+        type="email"
+        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+        id="exampleInputEmail2"
+        aria-describedby="emailHelp"
+        placeholder="Enter email" />
+      <label
+        for="exampleInputEmail2"
+        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+        >Email address</label
+      >
+    </div>
+    <!--Remember me checkbox-->
+    <div class="mb-6 flex items-center justify-between">
+      <div class="block min-h-[1.5rem] pl-[1.5rem]">
+        <input
+          class="relative float-left -ml-[1.5rem] mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+          type="checkbox"
+          value=""
+          id="exampleCheck2" />
+        <label
+          class="inline-block pl-[0.15rem] hover:cursor-pointer"
+          for="exampleCheck2">
+          Remember me
+        </label>
+      </div>
+
+      <!--Forgot password link-->
+      <a
+        href="#!"
+        class="text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+        >Forgot password?</a
+      >
+    </div>
+
+    <!--Sign in button-->
+    <button
+      type="submit"
+      class="dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]] inline-block w-full rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+      data-te-ripple-init
+      data-te-ripple-color="light">
+      Sign in
+    </button>
+  </form>
+</div>
+</div>
+
+
+<script>
+    // Initialization for ES Users
+import {
+  Ripple,
+  Input,
+  initTE,
+} from "tw-elements";
+
+initTE({ Ripple, Input });
+</script>
+
+
+       
+   
+
+
+
+
+
+
+
+  </div>
+  <!-- ----------------cart--part---end---- -->
+<footer class="bg-gradient-to-r from-[#380D37] to-[#DC275C] pt-4 text-white h-[450px] mt-[170px]">
+  <div class="flex justify-evenly">
+    <div class="">
+      <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Address</p>
+        <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[30px] text-left">
+          <li><a href="#" class="hover:text-gray-300">Address: </a></li>
+          <li><a href="#" class="hover:text-gray-300">Shop # 4A-009A, Block # A, Level #04,</a></li>
+          <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">Jamuna Future Park, Dhaka -1229</a></li>
+          <li><a href="#" class="hover:text-gray-300"> Shop # 607(5th Floor),</a></li>
+          <li><a href="#" class="hover:text-gray-300">Rajuk Commercial-Complex, </a></li>
+          <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">Azampur, Uttara, Dhaka-1230</a></li>
+          <li><a href="#" class="hover:text-gray-300">Trade license : 202984t</a> </li>
+          <li> <a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a> </li>
+        </ul>
+      </div>
+    <div>
+    <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Company</p>
+    <ul class="text-[#F2F2F2] font-[jost] text-[16px] font-[500] leading-[30px] text-left">
+      <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Terms& Conditions</a></li>
+        <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Privay Policy</a></li>
+        <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">My account</a></li>
+      <li class="mb-[25px] list-disc hover:bg-blue-950"><a href="#">Refund & Service Policy</a></li>
+    </ul>
+  </div>
+<div class="">
+  <p class="text-[#F2F2F2] font-[jost] text-[40px] font-[500] text-left my-3">Contact</p>
+    <ul class="text-[#F2F2F2] font-[jost] text-[15px] font-[500] leading-[30px] text-left">
+       <li class="mt-[15px]"><a href="#" class="hover:text-gray-300"> Phone:</a></li>
+       <li><a href="#" class="hover:text-gray-300">+8801757773557, +8801712644209,</a></li>
+      <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">+8801736361123, +8801722288944</a>
+       </li>
+       <li><a href="#" class="hover:text-gray-300">Email:</a></li>
+      <li class="mb-[15px]"><a href="#" class="hover:text-gray-300">info@lappyvalley.com</a></li>
+      <li><a href="#" class="hover:text-gray-300">Trade license : 202984</a></li>
+       <li><a href="#" class="hover:text-gray-300">Bin Number : 0049818790102</a></li>
+    </ul>
+  <!-- -------social----------icon-------------  -->
+  <div class="mt-[20px] grid grid-cols-5 gap-2 text-[24px]">
+    <a href=""> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+  </div>
+</ul>
+</div>
+</div>
+</footer>
+</body>
+</html>
+
+    
+  
+   
+ 
+   
+                              
+
+
+
+
+
+
+                    
+                                      
+                                      
+                                      
+                                      
+                                                 
+                                           
+                                           
+                                           
+                                           
+                                          
+                                           
+                                          
+                                  
+                                        
+                                        
+                                        
+
+  
+  
+     
+  
+        
+
+
+
+                    
+                          
