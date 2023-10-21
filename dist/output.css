@@ -1029,6 +1029,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: ;
 }
 
+.my-\[20px\] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .-ml-\[1\.5rem\] {
   margin-left: -1.5rem;
 }
@@ -3284,6 +3289,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   padding-right: 96px;
 }
 
+.px-\[161px\] {
+  padding-left: 161px;
+  padding-right: 161px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -3502,6 +3512,10 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .pb-\[20px\] {
   padding-bottom: 20px;
+}
+
+.pr-\[180px\] {
+  padding-right: 180px;
 }
 
 .text-left {
