@@ -1270,6 +1270,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: ;
 }
 
+.mb-\[26px\] {
+  margin-bottom: 26px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
